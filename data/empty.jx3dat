@@ -1,0 +1,10 @@
+data = {
+  ["BUFF"] = {},
+  ["DEBUFF"] = {},
+  ["CASTING"] = {},
+  ["NPC"] = {},
+  ["DOODAD"] = {},
+  ["CIRCLE"] = {},
+  ["TALK"] = {},
+  ["CHAT"] = {},
+}

@@ -1,0 +1,71 @@
+data = {
+  ["BUFF"] = {},
+  ["DEBUFF"] = {
+    [224]={
+      {{bBuffList=true},dwID=8776,nLevel=1},
+      {{bBuffList=true,bTeamPanel=true},nLevel=2,dwID=8734}
+    },
+    [227]={
+      {{bTeamPanel=true,bScreenHead=true},nLevel=2,nCount=3,dwID=9024}
+    },
+    [228]={
+      {{bScreenHead=true},szName="沉默",dwID=8817,nLevel=2},
+      {{bCenterAlarm=true,bScreenHead=true},nIcon=2027,nScrutinyType=2,dwID=9187,szName="童子拜佛",szNote="靠近他！",nLevel=2},
+      {{bCenterAlarm=true,bScreenHead=true},nIcon=2133,nScrutinyType=2,szName="金刚伏虎",dwID=9184,szNote="远离他！",nLevel=1}
+    },
+  },
+  ["CASTING"] = {
+    [224]={
+      {tCountdown={{nIcon=3398,nTime=15,szName="幽冥鬼步",nRefresh=7,nClass=9}},[8]={bCenterAlarm=true},col={255,2,2},dwID=13656,nLevel=1}
+    },
+    [227]={
+      {dwID=13809,nLevel=5,[9]={bCenterAlarm=true},tCountdown={{nIcon=7218,nTime=55,szName="白尘障壁（反弹）",nRefresh=7,nClass=9}}}
+    },
+    [228]={
+      {dwID=13796,[9]={bBigFontAlarm=true,bFullScreen=true},nLevel=2},
+      {nLevel=1,[8]={bCenterAlarm=true,bScreenHead=true},col={255,238,2},dwID=13856,szNote="打断！",tCountdown={{nIcon=2874,key="打断",nTime=33,szName="准备下一次打断",nRefresh=7,nClass=8}}},
+      {nLevel=1,[8]={bCenterAlarm=true,bScreenHead=true},col={255,250,2},dwID=13855,szNote="打断！",tCountdown={{nIcon=2874,key="打断",nTime=33,szName="准备下一次打断",nRefresh=7,nClass=8}}},
+      {[8]={bCenterAlarm=true},bMonTarget=true,nLevel=1,dwID=15074},
+      {nLevel=1,bMonTarget=true,[8]={bCenterAlarm=true},dwID=13758}
+    },
+    [229]={
+      {dwID=14012,[8]={bCenterAlarm=true,bScreenHead=true},nLevel=1,col={255,2,2}},
+      {nLevel=1,[8]={bCenterAlarm=true},dwID=14048}
+    },
+  },
+  ["NPC"] = {
+    [224]={
+      {nFrame=57,[3]={bCenterAlarm=true},dwID=46466},
+      {tCountdown={{nIcon=2028,nRefresh=7,nClass=7,nTime="60,蓄力;85,愤怒状态"}},nFrame=47,dwID=46441}
+    },
+    [225]={
+      {tCountdown={{szName="音潮倾湖",nClass=7,nIcon=7132,nTime=52}},dwID=46475,nFrame=47}
+    },
+    [227]={
+      {nFrame=57,dwID=46560,tCountdown={{nIcon=7218,nTime=23,szName="白尘障壁（反弹）",nRefresh=7,nClass=7}}}
+    },
+    [228]={
+      {tCountdown={{nIcon=2874,key="打断",nTime=30,szName="准备打断【拓跋思南】",nClass=7}},nFrame=57,dwID=46671},
+      {tCountdown={{nIcon=2874,key="打断",nTime=28,szName="准备打断【李忘生】",bHold=false,nClass=7}},nFrame=57,dwID=46682}
+    },
+    [229]={
+      {tCountdown={{szName="流风五连斩",nClass=3,nIcon=7454,nTime=20}},nFrame=47,dwID=46899},
+      {tCountdown={{nIcon=7454,nTime=39,szName="流风五连斩",nRefresh=10,nClass=3}},dwID=46911,nFrame=57}
+    },
+  },
+  ["DOODAD"] = {},
+  ["CIRCLE"] = {
+    [224]={
+      {dwType=3,tCircles={{nRadius=4,col={255,0,0},nAngle=120,bBorder=true,bEnable=true},{nRadius=4,col={255,255,255},nAngle=360,bBorder=true,bEnable=true}},key="看舞"}
+    },
+    [225]={
+      {dwType=3,tCircles={{nRadius=6,col={255,0,0},nAngle=50,bBorder=false,bEnable=true}},key="刺客聂政"},
+      {dwType=3,tCircles={{nRadius=10,col={255,128,0},nAngle=30,bBorder=false,bEnable=true}},key=46475,szNote="凤息颜"}
+    },
+    [229]={
+      {dwType=3,tCircles={{nRadius=5,col={255,0,0},nAngle=360,bBorder=true,bEnable=true}},key="平花秀夜"}
+    },
+  },
+  ["TALK"] = {},
+  ["CHAT"] = {},
+}

@@ -1,0 +1,108 @@
+data = {
+  ["BUFF"] = {
+    [72]={
+      {{bBuffList=true},dwID=2626,nLevel=1},
+    },
+  },
+  ["DEBUFF"] = {
+    [46]={
+      {{bScreenHead=true,bBuffList=true,bTeamPanel=true},dwID=2134,szNote="贴近传给队友",nLevel=1}
+    },
+    [72]={
+      {{bFullScreen=true,bPartyBuffList=true,bCenterAlarm=true,bBuffList=true,bScreenHead=true},nLevel=4,nScrutinyType=2,szNote="诛心咒",dwID=2628},
+      {{bPartyBuffList=true,bCenterAlarm=true,bBuffList=true,bScreenHead=true},nLevel=4,nScrutinyType=1,szNote="上天后聂云平砍重力球解除，否则秒杀",dwID=2631}
+    },
+    [133]={
+      {{bScreenHead=true,bPartyBuffList=true,bBuffList=true,bTeamPanel=true},nLevel=1,nScrutinyType=2,dwID=3976}
+    },
+    [155]={
+      {{bPartyBuffList=true,bCenterAlarm=true,bTeamPanel=true,bBuffList=true,bScreenHead=true},nLevel=1,nScrutinyType=2,bCheckLevel=true,dwID=5096,szNote="远离人群排毒圈！"},
+      {{bFullScreen=true,bBigFontAlarm=true,bTeamPanel=true,bPartyBuffList=true,bBuffList=true,bScreenHead=true},nLevel=2,nScrutinyType=2,bCheckLevel=true,dwID=5096,szNote="远离人群，离开红圈！",col={255,0,0}},
+      {{bBuffList=true},nLevel=1,nScrutinyType=1,col={255,0,0},dwID=4651,szNote="你出界了！"},
+      {{bTeamPanel=true,bCenterAlarm=true,bPartyBuffList=true,bBuffList=true,bScreenHead=true},dwID=4318,szNote="离开人群！",nLevel=3},
+      {nLevel=1,nScrutinyType=2,nCount=2,col={255,0,255},dwID=4460,[1]={bBuffList=true,bScreenHead=true}},
+      {{bCenterAlarm=true,bScreenHead=true,bBuffList=true,bTeamPanel=true},nLevel=1,nScrutinyType=2,col={255,0,0},dwID=4637,szNote="带好龙！"},
+      {{bCenterAlarm=true,bPartyBuffList=true,bBuffList=true,bScreenHead=true},nLevel=1,nScrutinyType=2,dwID=4310,col={255,0,0}},
+      {{bCenterAlarm=true,bScreenHead=true},nLevel=2,szNote="人肉火锅点名",dwID=4456}
+    },
+  },
+  ["CASTING"] = {
+    [72]={
+      {tCountdown={{nIcon=3401,nTime=10,szName="逐莲升华",nRefresh=10,nClass=8}},[8]={bCenterAlarm=true,bFullScreen=true},col={63,255,31},dwID=2777,nLevel=2},
+      {nLevel=4,[8]={bCenterAlarm=true,bFullScreen=true},dwID=2535,szNote="速度和BOSS抱团！",tCountdown={{nIcon=3430,nTime=35,szName="飞云回转刀",nRefresh=10,nClass=8}}},
+      {nLevel=4,[8]={bCenterAlarm=true,bFullScreen=true},szNote="停手，驱散！",dwID=2118}
+    },
+    [133]={
+      {nLevel=2,[8]={bCenterAlarm=true,bScreenHead=true},dwID=3703},
+      {nLevel=2,[8]={bCenterAlarm=true},dwID=3623}
+    },
+    [155]={
+      {dwID=4999,tCountdown={{nIcon=3293,nTime=30,szName="精确射杀",nRefresh=10,nClass=9}},[9]={bCenterAlarm=true,bFullScreen=true},nLevel=1},
+      {[8]={bBigFontAlarm=true,bFullScreen=true},tCountdown={{nIcon=7479,nTime=17,szName="随机技能",nRefresh=10,nClass=8}},dwID=5133,nLevel=1},
+      {[8]={bCenterAlarm=true,bFullScreen=true},tCountdown={{nIcon=7479,nTime=23,szName="随机技能",nRefresh=10,nClass=8}},dwID=5131,nLevel=1},
+      {nLevel=2,[8]={bBigFontAlarm=true,bFullScreen=true},szNote="打断！",dwID=4268},
+      {nLevel=2,dwID=4254,szNote="截脉驱散！",[9]={bCenterAlarm=true},tCountdown={{nIcon=4495,nTime=30,szName="截脉",nRefresh=10,nClass=9}}},
+      {nLevel=2,[8]={bCenterAlarm=true,bFullScreen=true},dwID=4252,szNote="挡狂沙！",tCountdown={{nIcon=4496,nTime=20,szName="狂沙",nRefresh=10,nClass=8}}},
+    },
+  },
+  ["NPC"] = {
+    [133]={
+      {nFrame=47,[3]={bCenterAlarm=true,bScreenHead=true,tMark={true,false,false,false,false,false,false,false,false,false}},dwID=17375},
+      {dwID=17328,tCountdown={{nIcon=3290,nClass=7,nTime="25,雷涌;40,扫射;61,扫射结束;81,扫射;102,扫射结束;114,雷涌;123,贴地电流;180,雷涌;195,扫射;216,扫射结束;236,扫射;257,扫射结束;269,雷涌;278,贴地电流;"}},nFrame=52},
+      {nFrame=54,szNote="我会反弹",dwID=17355},
+      {dwID=17321,tCountdown={{nClass=7,szName="踏狼奔月·点名秒杀",nIcon=1897,nTime=30}},nFrame=47}
+    },
+    [155]={
+      {nFrame=52,[3]={bCenterAlarm=true,bScreenHead=true},dwID=20475},
+      {dwID=20480,[3]={bCenterAlarm=true,bFullScreen=true,tMark={true,true,true,true,true,true,true,true,true,true}},nFrame=52},
+      {dwID=21601,tCountdown={{nIcon=2048,nClass=7,nTime="20,抓人/毒圈;30,动物出现;40,抓人/毒圈;60,滚石投掷;65,怒火猛击;85,致命格挡;105,抓人/毒圈;125,抓人/毒圈;145,滚石投掷;150,怒火猛击;170,致命格挡;190,抓人/毒圈;210,抓人/毒圈;230,滚石投掷;235,怒火猛击;255,致命格挡;275,抓人/毒圈;295,抓人/毒圈;315,滚石投掷;320,怒火猛击;340,致命格挡;360,抓人/毒圈;"}},nFrame=47},
+      {dwID=21362,szName="李倓分身",[11]={bBigFontAlarm=true},nFrame=57},
+      {dwID=21595,tCountdown={{nIcon=7479,nClass=7,nTime="10,第一次技能;70,第一次牢笼;"}},nFrame=47},
+      {dwID=20415,szName="八部气劲",[3]={bCenterAlarm=true,bFullScreen=true},nFrame=57},
+      {dwID=20383,tCountdown={{nIcon=2028,nClass=7,nTime="6,第一波泰拳手出现;11,第一波枪斧兵出现;20,绿球出现;30,红球出现;45,第二波泰拳手出现;50,第二波枪斧兵出现;60,绿球出现;70,红球出现;84,第三波泰拳手出现;89,第三波枪斧兵出现;100,绿球出现;110,红球出现;123,第四波泰拳手出现;128,第四波枪斧兵出现;140,绿球出现;150,红球出现;160,准备转阶段;165,第一个统帅出现;185,第二个统帅出现;225,第一个统帅出现;245,第二个统帅出现"}},nFrame=47},
+    },
+  },
+  ["DOODAD"] = {},
+  ["CIRCLE"] = {
+    [72]={
+      {dwType=3,key="千针织沼",bTarget=false,bDrawLine=true,bDrawName=false,tCircles={{nRadius=30,col={0,255,0},nAngle=1,bBorder=true,bEnable=true}},bEnable=true},
+      {dwType=3,tCircles={{nRadius=15,col={0,255,0},nAngle=10,bBorder=true,bEnable=true}},key="逐莲弹",bEnable=true},
+      {dwType=3,tCircles={{nRadius=10,col={255,128,0},nAngle=20,bBorder=true,bEnable=true}},key="飞云回转刀",bEnable=true},
+      {dwType=3,key="被封的重力球",bDrawName=true,szNote="平砍解逐莲",bEnable=true}
+    },
+    [133]={
+      {dwType=3,tCircles={{nRadius=15,col={255,255,255},nAngle=70,bBorder=false,bEnable=true}},key="南之雷神",bEnable=true},
+      {dwType=3,tCircles={{nRadius=1,col={255,255,255},nAngle=360,bBorder=true,bEnable=true}},key="地雷",bEnable=true},
+      {dwType=3,tCircles={{nRadius=3,col={255,255,255},nAngle=360,bBorder=true,bEnable=true}},key="瓷罐",bDrawName=true,szNote="瓷罐",bEnable=true}
+    },
+    [155]={
+      {dwType=3,key="狂沙子弹特效",bDrawName=false,tCircles={{nRadius=10,col={0,255,0},nAngle=20,bBorder=true,bEnable=true}},bEnable=true},
+      {dwType=3,key="龙象气劲",bTarget=true,bEnable=true,tCircles={{nRadius=8,col={0,255,0},nAngle=10,bBorder=true,bEnable=true}},bDrawLine=true,bScreenHead=true},
+      {dwType=3,tCircles={{nRadius=15,col={255,0,0},nAngle=10,bBorder=true,bEnable=true}},key="八部气劲",bEnable=true},
+      {dwType=3,key=21374,tCircles={{nRadius=30,col={0,255,255},nAngle=2,bBorder=true,bEnable=true}},bDrawName=false,szNote="龙头",bEnable=true},
+      {dwType=3,tCircles={{nRadius=10,col={255,0,0},nAngle=360,bBorder=true,bEnable=true}},key="迦楼罗炎劲气场",bEnable=true},
+      {dwType=3,key="血刀飞墨·鹰",bTarget=true,tCircles={{nRadius=10,col={40,140,218},nAngle=5,bBorder=true,bEnable=true}},bDrawLine=true,bDrawName=false,bEnable=true},
+      {dwType=3,tCircles={{nRadius=10,col={40,140,218},nAngle=5,bBorder=true,bEnable=true}},key="血刀飞墨·虎",bEnable=true},
+      {dwType=3,tCircles={{nRadius=10,col={40,140,218},nAngle=5,bBorder=true,bEnable=true}},key="血刀飞墨·蛙",bEnable=true},
+      {dwType=3,key=21362,tCircles={{nRadius=15,col={255,0,0},nAngle=10,bBorder=true,bEnable=true}},bDrawName=true,szNote="分身",bEnable=true},
+      {dwType=3,key="红球",tCircles={{nRadius=3,col={255,0,0},nAngle=360,bBorder=true,bEnable=true}},bDrawName=false,bEnable=true},
+      {dwType=3,key=20273,tCircles={{nRadius=10,col={0,255,0},nAngle=180,bBorder=true,bEnable=true}},szNote="萧沙",bEnable=true},
+      {dwType=3,tCircles={{nRadius=4,col={255,0,0},nAngle=80,bBorder=true,bEnable=true}},key="破损的石灯",bEnable=true},
+      {dwType=3,tCircles={{nRadius=4,col={255,0,0},nAngle=80,bBorder=true,bEnable=true}},key="破损的石栏",bEnable=true},
+      {dwType=3,tCircles={{nRadius=4,col={255,0,0},nAngle=80,bBorder=true,bEnable=true}},key="破损的石座",bEnable=true},
+      {dwType=3,tCircles={{nRadius=4,col={255,0,0},nAngle=80,bBorder=true,bEnable=true}},key="破损的石柱",bEnable=true}
+    },
+  },
+  ["TALK"] = {
+    [133]={
+      {[14]={bCenterAlarm=true,bFullScreen=true},szNote="陆寻双眼放出寒光！",szContent="陆寻双眼放出寒光！"},
+      {tCountdown={{nClass=14,szName="醉蛛老人一阶段",nIcon=2814,nTime=240}},szNote="醉蛛老人第一阶段",szTarget="李忘生",szContent="此地被醉蛛老人设下了陷阱！诸位大侠当心！"}
+    },
+    [155]={
+      {[14]={bCenterAlarm=true},szTarget="萧沙",szContent="哈哈，痛快，你们就一起上吧，老夫自出少林之后还未全力施展过。今天就让你们见识一下我的厉害。",szNote="萧沙转阶段远程注意带龙"},
+      {[14]={bCenterAlarm=true,bFullScreen=true},szNote="速度躲到冰柱后面",szContent="摩提耶罗气聚丹田"},
+      {tCountdown={{nClass=14,szName="冰柱",nIcon=2023,nTime=25}},szContent="西天有路，且让我送你一程！",[14]={bCenterAlarm=true},szTarget="摩提耶罗",szNote="冰柱出现"}
+    },
+  },
+  ["CHAT"] = {},
+}
