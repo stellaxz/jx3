@@ -1,71 +1,71 @@
-data = {
-  ["BUFF"] = {},
-  ["DEBUFF"] = {
+{
+  BUFF={},
+  CASTING={
     [224]={
-      {{bBuffList=true},dwID=8776,nLevel=1},
-      {{bBuffList=true,bTeamPanel=true},nLevel=2,dwID=8734}
+      {col={255,2,2},dwID=13656,nLevel=1,tCountdown={[1]={nClass=9,nIcon=3398,nRefresh=7,nTime=15,szName="幽冥鬼步"}},[8]={bCenterAlarm=true}}
     },
     [227]={
-      {{bTeamPanel=true,bScreenHead=true},nLevel=2,nCount=3,dwID=9024}
+      {dwID=13809,nLevel=5,tCountdown={[1]={nClass=9,nIcon=7218,nRefresh=7,nTime=55,szName="白尘障壁（反弹）"}},[9]={bCenterAlarm=true}}
     },
     [228]={
-      {{bScreenHead=true},szName="沉默",dwID=8817,nLevel=2},
-      {{bCenterAlarm=true,bScreenHead=true},nIcon=2027,nScrutinyType=2,dwID=9187,szName="童子拜佛",szNote="靠近他！",nLevel=2},
-      {{bCenterAlarm=true,bScreenHead=true},nIcon=2133,nScrutinyType=2,szName="金刚伏虎",dwID=9184,szNote="远离他！",nLevel=1}
-    },
-  },
-  ["CASTING"] = {
-    [224]={
-      {tCountdown={{nIcon=3398,nTime=15,szName="幽冥鬼步",nRefresh=7,nClass=9}},[8]={bCenterAlarm=true},col={255,2,2},dwID=13656,nLevel=1}
-    },
-    [227]={
-      {dwID=13809,nLevel=5,[9]={bCenterAlarm=true},tCountdown={{nIcon=7218,nTime=55,szName="白尘障壁（反弹）",nRefresh=7,nClass=9}}}
-    },
-    [228]={
-      {dwID=13796,[9]={bBigFontAlarm=true,bFullScreen=true},nLevel=2},
-      {nLevel=1,[8]={bCenterAlarm=true,bScreenHead=true},col={255,238,2},dwID=13856,szNote="打断！",tCountdown={{nIcon=2874,key="打断",nTime=33,szName="准备下一次打断",nRefresh=7,nClass=8}}},
-      {nLevel=1,[8]={bCenterAlarm=true,bScreenHead=true},col={255,250,2},dwID=13855,szNote="打断！",tCountdown={{nIcon=2874,key="打断",nTime=33,szName="准备下一次打断",nRefresh=7,nClass=8}}},
-      {[8]={bCenterAlarm=true},bMonTarget=true,nLevel=1,dwID=15074},
-      {nLevel=1,bMonTarget=true,[8]={bCenterAlarm=true},dwID=13758}
+      {dwID=13796,nLevel=2,[9]={bBigFontAlarm=true,bFullScreen=true}},
+      {col={255,238,2},dwID=13856,nLevel=1,szNote="打断！",tCountdown={[1]={key="打断",nClass=8,nIcon=2874,nRefresh=7,nTime=33,szName="准备下一次打断"}},[8]={bCenterAlarm=true,bScreenHead=true}},
+      {col={255,250,2},dwID=13855,nLevel=1,szNote="打断！",tCountdown={[1]={key="打断",nClass=8,nIcon=2874,nRefresh=7,nTime=33,szName="准备下一次打断"}},[8]={bCenterAlarm=true,bScreenHead=true}},
+      {bMonTarget=true,dwID=15074,nLevel=1,[8]={bCenterAlarm=true}},
+      {bMonTarget=true,dwID=13758,nLevel=1,[8]={bCenterAlarm=true}}
     },
     [229]={
-      {dwID=14012,[8]={bCenterAlarm=true,bScreenHead=true},nLevel=1,col={255,2,2}},
-      {nLevel=1,[8]={bCenterAlarm=true},dwID=14048}
-    },
+      {col={255,2,2},dwID=14012,nLevel=1,[8]={bCenterAlarm=true,bScreenHead=true}},
+      {dwID=14048,nLevel=1,[8]={bCenterAlarm=true}}
+    }
   },
-  ["NPC"] = {
+  CHAT={},
+  CIRCLE={
     [224]={
-      {nFrame=57,[3]={bCenterAlarm=true},dwID=46466},
-      {tCountdown={{nIcon=2028,nRefresh=7,nClass=7,nTime="60,蓄力;85,愤怒状态"}},nFrame=47,dwID=46441}
+      {dwType=3,key="看舞",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=120,nRadius=4},[2]={bBorder=true,bEnable=true,col={255,255,255},nAngle=360,nRadius=4}}}
     },
     [225]={
-      {tCountdown={{szName="音潮倾湖",nClass=7,nIcon=7132,nTime=52}},dwID=46475,nFrame=47}
+      {dwType=3,key="刺客聂政",tCircles={[1]={bBorder=false,bEnable=true,col={255,0,0},nAngle=50,nRadius=6}}},
+      {dwType=3,key=46475,szNote="凤息颜",tCircles={[1]={bBorder=false,bEnable=true,col={255,128,0},nAngle=30,nRadius=10}}}
+    },
+    [229]={
+      {dwType=3,key="平花秀夜",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=5}}}
+    }
+  },
+  DEBUFF={
+    [224]={
+      {dwID=8776,nLevel=1,[1]={bBuffList=true}},
+      {dwID=8734,nLevel=2,[1]={bBuffList=true,bTeamPanel=true}}
     },
     [227]={
-      {nFrame=57,dwID=46560,tCountdown={{nIcon=7218,nTime=23,szName="白尘障壁（反弹）",nRefresh=7,nClass=7}}}
+      {dwID=9024,nCount=3,nLevel=2,[1]={bScreenHead=true,bTeamPanel=true}}
     },
     [228]={
-      {tCountdown={{nIcon=2874,key="打断",nTime=30,szName="准备打断【拓跋思南】",nClass=7}},nFrame=57,dwID=46671},
-      {tCountdown={{nIcon=2874,key="打断",nTime=28,szName="准备打断【李忘生】",bHold=false,nClass=7}},nFrame=57,dwID=46682}
-    },
-    [229]={
-      {tCountdown={{szName="流风五连斩",nClass=3,nIcon=7454,nTime=20}},nFrame=47,dwID=46899},
-      {tCountdown={{nIcon=7454,nTime=39,szName="流风五连斩",nRefresh=10,nClass=3}},dwID=46911,nFrame=57}
-    },
+      {dwID=8817,nLevel=2,szName="沉默",[1]={bScreenHead=true}},
+      {dwID=9187,nIcon=2027,nLevel=2,nScrutinyType=2,szName="童子拜佛",szNote="靠近他！",[1]={bCenterAlarm=true,bScreenHead=true}},
+      {dwID=9184,nIcon=2133,nLevel=1,nScrutinyType=2,szName="金刚伏虎",szNote="远离他！",[1]={bCenterAlarm=true,bScreenHead=true}}
+    }
   },
-  ["DOODAD"] = {},
-  ["CIRCLE"] = {
+  DOODAD={},
+  NPC={
     [224]={
-      {dwType=3,tCircles={{nRadius=4,col={255,0,0},nAngle=120,bBorder=true,bEnable=true},{nRadius=4,col={255,255,255},nAngle=360,bBorder=true,bEnable=true}},key="看舞"}
+      {dwID=46466,nFrame=57,[3]={bCenterAlarm=true}},
+      {dwID=46441,nFrame=47,tCountdown={[1]={nClass=7,nIcon=2028,nRefresh=7,nTime="60,蓄力;85,愤怒状态"}}}
     },
     [225]={
-      {dwType=3,tCircles={{nRadius=6,col={255,0,0},nAngle=50,bBorder=false,bEnable=true}},key="刺客聂政"},
-      {dwType=3,tCircles={{nRadius=10,col={255,128,0},nAngle=30,bBorder=false,bEnable=true}},key=46475,szNote="凤息颜"}
+      {dwID=46475,nFrame=47,tCountdown={[1]={nClass=7,nIcon=7132,nTime=52,szName="音潮倾湖"}}}
+    },
+    [227]={
+      {dwID=46560,nFrame=57,tCountdown={[1]={nClass=7,nIcon=7218,nRefresh=7,nTime=23,szName="白尘障壁（反弹）"}}}
+    },
+    [228]={
+      {dwID=46671,nFrame=57,tCountdown={[1]={key="打断",nClass=7,nIcon=2874,nTime=30,szName="准备打断【拓跋思南】"}}},
+      {dwID=46682,nFrame=57,tCountdown={[1]={bHold=false,key="打断",nClass=7,nIcon=2874,nTime=28,szName="准备打断【李忘生】"}}}
     },
     [229]={
-      {dwType=3,tCircles={{nRadius=5,col={255,0,0},nAngle=360,bBorder=true,bEnable=true}},key="平花秀夜"}
-    },
+      {dwID=46899,nFrame=47,tCountdown={[1]={nClass=3,nIcon=7454,nTime=20,szName="流风五连斩"}}},
+      {dwID=46911,nFrame=57,tCountdown={[1]={nClass=3,nIcon=7454,nRefresh=10,nTime=39,szName="流风五连斩"}}}
+    }
   },
-  ["TALK"] = {},
-  ["CHAT"] = {},
+  TALK={}
 }

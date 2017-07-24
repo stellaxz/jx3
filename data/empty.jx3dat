@@ -1,10 +1,10 @@
-data = {
-  ["BUFF"] = {},
-  ["DEBUFF"] = {},
-  ["CASTING"] = {},
-  ["NPC"] = {},
-  ["DOODAD"] = {},
-  ["CIRCLE"] = {},
-  ["TALK"] = {},
-  ["CHAT"] = {},
+{
+  BUFF={},
+  CASTING={},
+  CHAT={},
+  CIRCLE={},
+  DEBUFF={},
+  DOODAD={},
+  NPC={},
+  TALK={}
 }
