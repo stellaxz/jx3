@@ -6,8 +6,8 @@
   },
   CASTING={
     [72]={
-      {col={63,255,31},dwID=2777,nLevel=2,tCountdown={[1]={nClass=8,nIcon=3401,nRefresh=10,nTime=10,szName="逐莲升华"}},[8]={bCenterAlarm=true,bFullScreen=true}},
-      {dwID=2535,nLevel=4,szNote="速度和BOSS抱团！",tCountdown={[1]={nClass=8,nIcon=3430,nRefresh=10,nTime=35,szName="飞云回转刀"}},[8]={bCenterAlarm=true,bFullScreen=true}},
+      {col={63,255,31},dwID=2777,nLevel=2,tCountdown={{nClass=8,nIcon=3401,nRefresh=10,nTime=10,szName="逐莲升华"}},[8]={bCenterAlarm=true,bFullScreen=true}},
+      {dwID=2535,nLevel=4,szNote="速度和BOSS抱团！",tCountdown={{nClass=8,nIcon=3430,nRefresh=10,nTime=35,szName="飞云回转刀"}},[8]={bCenterAlarm=true,bFullScreen=true}},
       {dwID=2118,nLevel=4,szNote="停手，驱散！",[8]={bCenterAlarm=true,bFullScreen=true}}
     },
     [133]={
@@ -15,43 +15,43 @@
       {dwID=3623,nLevel=2,[8]={bCenterAlarm=true}}
     },
     [155]={
-      {dwID=4999,nLevel=1,tCountdown={[1]={nClass=9,nIcon=3293,nRefresh=10,nTime=30,szName="精确射杀"}},[9]={bCenterAlarm=true,bFullScreen=true}},
-      {dwID=5133,nLevel=1,tCountdown={[1]={nClass=8,nIcon=7479,nRefresh=10,nTime=17,szName="随机技能"}},[8]={bBigFontAlarm=true,bFullScreen=true}},
-      {dwID=5131,nLevel=1,tCountdown={[1]={nClass=8,nIcon=7479,nRefresh=10,nTime=23,szName="随机技能"}},[8]={bCenterAlarm=true,bFullScreen=true}},
+      {dwID=4999,nLevel=1,tCountdown={{nClass=9,nIcon=3293,nRefresh=10,nTime=30,szName="精确射杀"}},[9]={bCenterAlarm=true,bFullScreen=true}},
+      {dwID=5133,nLevel=1,tCountdown={{nClass=8,nIcon=7479,nRefresh=10,nTime=17,szName="随机技能"}},[8]={bBigFontAlarm=true,bFullScreen=true}},
+      {dwID=5131,nLevel=1,tCountdown={{nClass=8,nIcon=7479,nRefresh=10,nTime=23,szName="随机技能"}},[8]={bCenterAlarm=true,bFullScreen=true}},
       {dwID=4268,nLevel=2,szNote="打断！",[8]={bBigFontAlarm=true,bFullScreen=true}},
-      {dwID=4254,nLevel=2,szNote="截脉驱散！",tCountdown={[1]={nClass=9,nIcon=4495,nRefresh=10,nTime=30,szName="截脉"}},[9]={bCenterAlarm=true}},
-      {dwID=4252,nLevel=2,szNote="挡狂沙！",tCountdown={[1]={nClass=8,nIcon=4496,nRefresh=10,nTime=20,szName="狂沙"}},[8]={bCenterAlarm=true,bFullScreen=true}}
+      {dwID=4254,nLevel=2,szNote="截脉驱散！",tCountdown={{nClass=9,nIcon=4495,nRefresh=10,nTime=30,szName="截脉"}},[9]={bCenterAlarm=true}},
+      {dwID=4252,nLevel=2,szNote="挡狂沙！",tCountdown={{nClass=8,nIcon=4496,nRefresh=10,nTime=20,szName="狂沙"}},[8]={bCenterAlarm=true,bFullScreen=true}}
     }
   },
   CHAT={},
   CIRCLE={
     [72]={
-      {bDrawLine=true,bDrawName=false,bEnable=true,bTarget=false,dwType=3,key="千针织沼",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=1,nRadius=30}}},
-      {bEnable=true,dwType=3,key="逐莲弹",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=10,nRadius=15}}},
-      {bEnable=true,dwType=3,key="飞云回转刀",tCircles={[1]={bBorder=true,bEnable=true,col={255,128,0},nAngle=20,nRadius=10}}},
+      {bDrawLine=true,bDrawName=false,bEnable=true,bTarget=false,dwType=3,key="千针织沼",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=1,nRadius=30}}},
+      {bEnable=true,dwType=3,key="逐莲弹",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=10,nRadius=15}}},
+      {bEnable=true,dwType=3,key="飞云回转刀",tCircles={{bBorder=true,bEnable=true,col={255,128,0},nAngle=20,nRadius=10}}},
       {bDrawName=true,bEnable=true,dwType=3,key="被封的重力球",szNote="平砍解逐莲"}
     },
     [133]={
-      {bEnable=true,dwType=3,key="南之雷神",tCircles={[1]={bBorder=false,bEnable=true,col={255,255,255},nAngle=70,nRadius=15}}},
-      {bEnable=true,dwType=3,key="地雷",tCircles={[1]={bBorder=true,bEnable=true,col={255,255,255},nAngle=360,nRadius=1}}},
-      {bDrawName=true,bEnable=true,dwType=3,key="瓷罐",szNote="瓷罐",tCircles={[1]={bBorder=true,bEnable=true,col={255,255,255},nAngle=360,nRadius=3}}}
+      {bEnable=true,dwType=3,key="南之雷神",tCircles={{bBorder=false,bEnable=true,col={255,255,255},nAngle=70,nRadius=15}}},
+      {bEnable=true,dwType=3,key="地雷",tCircles={{bBorder=true,bEnable=true,col={255,255,255},nAngle=360,nRadius=1}}},
+      {bDrawName=true,bEnable=true,dwType=3,key="瓷罐",szNote="瓷罐",tCircles={{bBorder=true,bEnable=true,col={255,255,255},nAngle=360,nRadius=3}}}
     },
     [155]={
-      {bDrawName=false,bEnable=true,dwType=3,key="狂沙子弹特效",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=20,nRadius=10}}},
-      {bDrawLine=true,bEnable=true,bScreenHead=true,bTarget=true,dwType=3,key="龙象气劲",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=10,nRadius=8}}},
-      {bEnable=true,dwType=3,key="八部气劲",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=10,nRadius=15}}},
-      {bDrawName=false,bEnable=true,dwType=3,key=21374,szNote="龙头",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,255},nAngle=2,nRadius=30}}},
-      {bEnable=true,dwType=3,key="迦楼罗炎劲气场",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=10}}},
-      {bDrawLine=true,bDrawName=false,bEnable=true,bTarget=true,dwType=3,key="血刀飞墨·鹰",tCircles={[1]={bBorder=true,bEnable=true,col={40,140,218},nAngle=5,nRadius=10}}},
-      {bEnable=true,dwType=3,key="血刀飞墨·虎",tCircles={[1]={bBorder=true,bEnable=true,col={40,140,218},nAngle=5,nRadius=10}}},
-      {bEnable=true,dwType=3,key="血刀飞墨·蛙",tCircles={[1]={bBorder=true,bEnable=true,col={40,140,218},nAngle=5,nRadius=10}}},
-      {bDrawName=true,bEnable=true,dwType=3,key=21362,szNote="分身",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=10,nRadius=15}}},
-      {bDrawName=false,bEnable=true,dwType=3,key="红球",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=3}}},
-      {bEnable=true,dwType=3,key=20273,szNote="萧沙",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=180,nRadius=10}}},
-      {bEnable=true,dwType=3,key="破损的石灯",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=80,nRadius=4}}},
-      {bEnable=true,dwType=3,key="破损的石栏",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=80,nRadius=4}}},
-      {bEnable=true,dwType=3,key="破损的石座",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=80,nRadius=4}}},
-      {bEnable=true,dwType=3,key="破损的石柱",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=80,nRadius=4}}}
+      {bDrawName=false,bEnable=true,dwType=3,key="狂沙子弹特效",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=20,nRadius=10}}},
+      {bDrawLine=true,bEnable=true,bScreenHead=true,bTarget=true,dwType=3,key="龙象气劲",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=10,nRadius=8}}},
+      {bEnable=true,dwType=3,key="八部气劲",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=10,nRadius=15}}},
+      {bDrawName=false,bEnable=true,dwType=3,key=21374,szNote="龙头",tCircles={{bBorder=true,bEnable=true,col={0,255,255},nAngle=2,nRadius=30}}},
+      {bEnable=true,dwType=3,key="迦楼罗炎劲气场",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=10}}},
+      {bDrawLine=true,bDrawName=false,bEnable=true,bTarget=true,dwType=3,key="血刀飞墨·鹰",tCircles={{bBorder=true,bEnable=true,col={40,140,218},nAngle=5,nRadius=10}}},
+      {bEnable=true,dwType=3,key="血刀飞墨·虎",tCircles={{bBorder=true,bEnable=true,col={40,140,218},nAngle=5,nRadius=10}}},
+      {bEnable=true,dwType=3,key="血刀飞墨·蛙",tCircles={{bBorder=true,bEnable=true,col={40,140,218},nAngle=5,nRadius=10}}},
+      {bDrawName=true,bEnable=true,dwType=3,key=21362,szNote="分身",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=10,nRadius=15}}},
+      {bDrawName=false,bEnable=true,dwType=3,key="红球",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=3}}},
+      {bEnable=true,dwType=3,key=20273,szNote="萧沙",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=180,nRadius=10}}},
+      {bEnable=true,dwType=3,key="破损的石灯",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=80,nRadius=4}}},
+      {bEnable=true,dwType=3,key="破损的石栏",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=80,nRadius=4}}},
+      {bEnable=true,dwType=3,key="破损的石座",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=80,nRadius=4}}},
+      {bEnable=true,dwType=3,key="破损的石柱",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=80,nRadius=4}}}
     }
   },
   DEBUFF={
@@ -80,29 +80,29 @@
   NPC={
     [133]={
       {dwID=17375,nFrame=47,[3]={bCenterAlarm=true,bScreenHead=true,tMark={[1]=true,[2]=false,[3]=false,[4]=false,[5]=false,[6]=false,[7]=false,[8]=false,[9]=false,[10]=false}}},
-      {dwID=17328,nFrame=52,tCountdown={[1]={nClass=7,nIcon=3290,nTime="25,雷涌;40,扫射;61,扫射结束;81,扫射;102,扫射结束;114,雷涌;123,贴地电流;180,雷涌;195,扫射;216,扫射结束;236,扫射;257,扫射结束;269,雷涌;278,贴地电流;"}}},
+      {dwID=17328,nFrame=52,tCountdown={{nClass=7,nIcon=3290,nTime="25,雷涌;40,扫射;61,扫射结束;81,扫射;102,扫射结束;114,雷涌;123,贴地电流;180,雷涌;195,扫射;216,扫射结束;236,扫射;257,扫射结束;269,雷涌;278,贴地电流;"}}},
       {dwID=17355,nFrame=54,szNote="我会反弹"},
-      {dwID=17321,nFrame=47,tCountdown={[1]={nClass=7,nIcon=1897,nTime=30,szName="踏狼奔月·点名秒杀"}}}
+      {dwID=17321,nFrame=47,tCountdown={{nClass=7,nIcon=1897,nTime=30,szName="踏狼奔月·点名秒杀"}}}
     },
     [155]={
       {dwID=20475,nFrame=52,[3]={bCenterAlarm=true,bScreenHead=true}},
       {dwID=20480,nFrame=52,[3]={bCenterAlarm=true,bFullScreen=true,tMark={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true}}},
-      {dwID=21601,nFrame=47,tCountdown={[1]={nClass=7,nIcon=2048,nTime="20,抓人/毒圈;30,动物出现;40,抓人/毒圈;60,滚石投掷;65,怒火猛击;85,致命格挡;105,抓人/毒圈;125,抓人/毒圈;145,滚石投掷;150,怒火猛击;170,致命格挡;190,抓人/毒圈;210,抓人/毒圈;230,滚石投掷;235,怒火猛击;255,致命格挡;275,抓人/毒圈;295,抓人/毒圈;315,滚石投掷;320,怒火猛击;340,致命格挡;360,抓人/毒圈;"}}},
+      {dwID=21601,nFrame=47,tCountdown={{nClass=7,nIcon=2048,nTime="20,抓人/毒圈;30,动物出现;40,抓人/毒圈;60,滚石投掷;65,怒火猛击;85,致命格挡;105,抓人/毒圈;125,抓人/毒圈;145,滚石投掷;150,怒火猛击;170,致命格挡;190,抓人/毒圈;210,抓人/毒圈;230,滚石投掷;235,怒火猛击;255,致命格挡;275,抓人/毒圈;295,抓人/毒圈;315,滚石投掷;320,怒火猛击;340,致命格挡;360,抓人/毒圈;"}}},
       {dwID=21362,nFrame=57,szName="李倓分身",[11]={bBigFontAlarm=true}},
-      {dwID=21595,nFrame=47,tCountdown={[1]={nClass=7,nIcon=7479,nTime="10,第一次技能;70,第一次牢笼;"}}},
+      {dwID=21595,nFrame=47,tCountdown={{nClass=7,nIcon=7479,nTime="10,第一次技能;70,第一次牢笼;"}}},
       {dwID=20415,nFrame=57,szName="八部气劲",[3]={bCenterAlarm=true,bFullScreen=true}},
-      {dwID=20383,nFrame=47,tCountdown={[1]={nClass=7,nIcon=2028,nTime="6,第一波泰拳手出现;11,第一波枪斧兵出现;20,绿球出现;30,红球出现;45,第二波泰拳手出现;50,第二波枪斧兵出现;60,绿球出现;70,红球出现;84,第三波泰拳手出现;89,第三波枪斧兵出现;100,绿球出现;110,红球出现;123,第四波泰拳手出现;128,第四波枪斧兵出现;140,绿球出现;150,红球出现;160,准备转阶段;165,第一个统帅出现;185,第二个统帅出现;225,第一个统帅出现;245,第二个统帅出现"}}}
+      {dwID=20383,nFrame=47,tCountdown={{nClass=7,nIcon=2028,nTime="6,第一波泰拳手出现;11,第一波枪斧兵出现;20,绿球出现;30,红球出现;45,第二波泰拳手出现;50,第二波枪斧兵出现;60,绿球出现;70,红球出现;84,第三波泰拳手出现;89,第三波枪斧兵出现;100,绿球出现;110,红球出现;123,第四波泰拳手出现;128,第四波枪斧兵出现;140,绿球出现;150,红球出现;160,准备转阶段;165,第一个统帅出现;185,第二个统帅出现;225,第一个统帅出现;245,第二个统帅出现"}}}
     }
   },
   TALK={
     [133]={
       {szContent="陆寻双眼放出寒光！",szNote="陆寻双眼放出寒光！",[14]={bCenterAlarm=true,bFullScreen=true}},
-      {szContent="此地被醉蛛老人设下了陷阱！诸位大侠当心！",szNote="醉蛛老人第一阶段",szTarget="李忘生",tCountdown={[1]={nClass=14,nIcon=2814,nTime=240,szName="醉蛛老人一阶段"}}}
+      {szContent="此地被醉蛛老人设下了陷阱！诸位大侠当心！",szNote="醉蛛老人第一阶段",szTarget="李忘生",tCountdown={{nClass=14,nIcon=2814,nTime=240,szName="醉蛛老人一阶段"}}}
     },
     [155]={
       {szContent="哈哈，痛快，你们就一起上吧，老夫自出少林之后还未全力施展过。今天就让你们见识一下我的厉害。",szNote="萧沙转阶段远程注意带龙",szTarget="萧沙",[14]={bCenterAlarm=true}},
       {szContent="摩提耶罗气聚丹田",szNote="速度躲到冰柱后面",[14]={bCenterAlarm=true,bFullScreen=true}},
-      {szContent="西天有路，且让我送你一程！",szNote="冰柱出现",szTarget="摩提耶罗",tCountdown={[1]={nClass=14,nIcon=2023,nTime=25,szName="冰柱"}},[14]={bCenterAlarm=true}}
+      {szContent="西天有路，且让我送你一程！",szNote="冰柱出现",szTarget="摩提耶罗",tCountdown={{nClass=14,nIcon=2023,nTime=25,szName="冰柱"}},[14]={bCenterAlarm=true}}
     }
   }
 }

@@ -8,9 +8,9 @@
     },
     [192]={
       {dwID=10398,nLevel=1,[8]={bCenterAlarm=true,bScreenHead=true}},
-      {dwID=13192,nLevel=2,tCountdown={[1]={nClass=9,nIcon=4504,nRefresh=10,nTime=20,szName="毒血涌动"}},[9]={bBigFontAlarm=true}},
+      {dwID=13192,nLevel=2,tCountdown={{nClass=9,nIcon=4504,nRefresh=10,nTime=20,szName="毒血涌动"}},[9]={bBigFontAlarm=true}},
       {col={255,0,255},dwID=10340,nLevel=3,[8]={bCenterAlarm=true,bFullScreen=true,bScreenHead=true}},
-      {dwID=10352,nLevel=1,tCountdown={[1]={nClass=8,nIcon=333,nRefresh=10,nTime=13,szName="冰霜一指"}}},
+      {dwID=10352,nLevel=1,tCountdown={{nClass=8,nIcon=333,nRefresh=10,nTime=13,szName="冰霜一指"}}},
       {dwID=9408,nLevel=1,[9]={bBigFontAlarm=true,bCenterAlarm=true}},
       {dwID=13203,nLevel=2,szNote="远离BOSS正面",[9]={bBigFontAlarm=true,bFullScreen=true}},
       {dwID=10399,nLevel=1,[8]={bCenterAlarm=true,bScreenHead=true}},
@@ -18,38 +18,38 @@
       {dwID=9539,nLevel=1,[9]={bBigFontAlarm=true,bCenterAlarm=true}},
       {dwID=13197,nLevel=2,szNote="站血圈",[8]={bBigFontAlarm=true,bFullScreen=true,bScreenHead=true}},
       {dwID=10347,nLevel=1,[8]={bBigFontAlarm=true,bFullScreen=true}},
-      {dwID=13210,nLevel=1,szNote="扶摇跳！",tCountdown={[1]={nClass=8,nIcon=4495,nRefresh=10,nTime=40,szName="断长生"}},[8]={bBigFontAlarm=true,bCenterAlarm=true,bFullScreen=true}},
-      {col={255,0,255},dwID=13254,nLevel=2,tCountdown={[1]={nClass=8,nIcon=4494,nRefresh=10,nTime=10,szName="漫天雪舞"}},[8]={bBigFontAlarm=true,bCenterAlarm=true,bFullScreen=true,bScreenHead=true}},
-      {dwID=13240,nLevel=1,szNote="离开正面",tCountdown={[1]={nClass=8,nIcon=4496,nRefresh=10,nTime=30,szName="断长生"}},[8]={bBigFontAlarm=true}},
+      {dwID=13210,nLevel=1,szNote="扶摇跳！",tCountdown={{nClass=8,nIcon=4495,nRefresh=10,nTime=40,szName="断长生"}},[8]={bBigFontAlarm=true,bCenterAlarm=true,bFullScreen=true}},
+      {col={255,0,255},dwID=13254,nLevel=2,tCountdown={{nClass=8,nIcon=4494,nRefresh=10,nTime=10,szName="漫天雪舞"}},[8]={bBigFontAlarm=true,bCenterAlarm=true,bFullScreen=true,bScreenHead=true}},
+      {dwID=13240,nLevel=1,szNote="离开正面",tCountdown={{nClass=8,nIcon=4496,nRefresh=10,nTime=30,szName="断长生"}},[8]={bBigFontAlarm=true}},
       {dwID=10337,nLevel=6,szName="圣火焚城",[8]={bBigFontAlarm=true}}
     }
   },
   CHAT={},
   CIRCLE={
     [191]={
-      {bEnable=true,dwType=3,key="田布戈",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=9}}},
-      {bEnable=true,dwType=3,key=37016,szNote="狼牙炮火",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=4}}},
-      {bDrawName=true,bEnable=true,dwType=3,key=36872,szNote="黑油圈",tCircles={[1]={bBorder=true,bEnable=true,col={65,50,160},nAngle=360,nRadius=5}}},
-      {bEnable=true,dwType=3,key=36873,szNote="油圈（已烧）",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=4}}},
-      {bEnable=true,dwType=3,key=37384,szNote="落石落点",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=4}}},
-      {bDrawLine=true,bDrawName=false,bEnable=true,bScreenHead=true,bTarget=true,dwType=3,key=36875,szNote="追击火龙",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,255},nAngle=10,nRadius=8}}},
-      {bDrawLine=true,bEnable=true,bScreenHead=true,bTarget=true,dwType=3,key=36871,szNote="追击点名",tCircles={[1]={bBorder=true,bEnable=false,col={0,255,255},nAngle=360,nRadius=2}}},
-      {bEnable=true,dwType=3,key=37014,szNote="炮火延长线",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=10,nRadius=7}}}
+      {bEnable=true,dwType=3,key="田布戈",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=9}}},
+      {bEnable=true,dwType=3,key=37016,szNote="狼牙炮火",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=4}}},
+      {bDrawName=true,bEnable=true,dwType=3,key=36872,szNote="黑油圈",tCircles={{bBorder=true,bEnable=true,col={65,50,160},nAngle=360,nRadius=5}}},
+      {bEnable=true,dwType=3,key=36873,szNote="油圈（已烧）",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=4}}},
+      {bEnable=true,dwType=3,key=37384,szNote="落石落点",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=4}}},
+      {bDrawLine=true,bDrawName=false,bEnable=true,bScreenHead=true,bTarget=true,dwType=3,key=36875,szNote="追击火龙",tCircles={{bBorder=true,bEnable=true,col={0,255,255},nAngle=10,nRadius=8}}},
+      {bDrawLine=true,bEnable=true,bScreenHead=true,bTarget=true,dwType=3,key=36871,szNote="追击点名",tCircles={{bBorder=true,bEnable=false,col={0,255,255},nAngle=360,nRadius=2}}},
+      {bEnable=true,dwType=3,key=37014,szNote="炮火延长线",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=10,nRadius=7}}}
     },
     [192]={
-      {bEnable=true,dwType=3,key="可蒙",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=60,nRadius=5}}},
-      {bEnable=true,dwType=3,key="阿独鹿",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,255},nAngle=70,nRadius=5}}},
-      {bEnable=true,dwType=3,key="乌素尔",tCircles={[1]={bBorder=true,bEnable=true,col={211,229,37},nAngle=70,nRadius=5}}},
-      {bEnable=true,dwType=3,key="断浪气劲",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,255},nAngle=20,nRadius=10}}},
-      {bEnable=true,dwType=3,key="白陶·琵琶",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=6}}},
-      {bEnable=true,dwType=3,key="白陶·箜篌",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=6}}},
-      {bEnable=true,dwType=3,key="漫天雪舞",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=3}}},
+      {bEnable=true,dwType=3,key="可蒙",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=60,nRadius=5}}},
+      {bEnable=true,dwType=3,key="阿独鹿",tCircles={{bBorder=true,bEnable=true,col={0,255,255},nAngle=70,nRadius=5}}},
+      {bEnable=true,dwType=3,key="乌素尔",tCircles={{bBorder=true,bEnable=true,col={211,229,37},nAngle=70,nRadius=5}}},
+      {bEnable=true,dwType=3,key="断浪气劲",tCircles={{bBorder=true,bEnable=true,col={0,255,255},nAngle=20,nRadius=10}}},
+      {bEnable=true,dwType=3,key="白陶·琵琶",tCircles={{bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=6}}},
+      {bEnable=true,dwType=3,key="白陶·箜篌",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=6}}},
+      {bEnable=true,dwType=3,key="漫天雪舞",tCircles={{bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=3}}},
       {bDrawLine=true,bEnable=true,bTarget=true,dwType=3,key="盲眼血奴"},
-      {bEnable=true,dwType=3,key="阴极",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=8}}},
-      {bEnable=true,dwType=3,key="阳极",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=8}}},
-      {bEnable=true,dwType=3,key="音波球",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=5,nRadius=18}}},
-      {bEnable=true,dwType=3,key=37043,szNote="史思明·血圈",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=4}}},
-      {dwType=3,key="西营援军",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,255},nAngle=5,nRadius=10}}}
+      {bEnable=true,dwType=3,key="阴极",tCircles={{bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=8}}},
+      {bEnable=true,dwType=3,key="阳极",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=8}}},
+      {bEnable=true,dwType=3,key="音波球",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=5,nRadius=18}}},
+      {bEnable=true,dwType=3,key=37043,szNote="史思明·血圈",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=4}}},
+      {dwType=3,key="西营援军",tCircles={{bBorder=true,bEnable=true,col={0,255,255},nAngle=5,nRadius=10}}}
     }
   },
   DEBUFF={
@@ -78,27 +78,27 @@
   DOODAD={},
   NPC={
     [191]={
-      {dwID=36872,nFrame=57,szName="黑油圈",tCountdown={[1]={nClass=3,nIcon=4495,nRefresh=10,nTime=10,szName="火龙点名"}}},
-      {dwID=36876,nFrame=52,tCountdown={[1]={nClass=3,nIcon=346,nRefresh=10,nTime=25,szName="火墙剩余时间"}},[3]={bBigFontAlarm=true}},
-      {dwID=36875,nFrame=57,szName="火龙追击",tCountdown={[1]={nClass=3,nIcon=4495,nRefresh=10,nTime=30,szName="火龙追击"}}},
-      {dwID=36869,nFrame=52,tCountdown={[1]={nClass=7,nIcon=4495,nTime="8,瞄准;22,火龙机雷;60,摧城一击;"},[2]={nClass=6,nIcon=346,nRefresh=7,nTime="0.55,准备第一次火墙;0.25,准备第二次火墙;0.15,准备第三次火墙;"}}},
-      {dwID=37535,nFrame=47,szNote="速度集火！",tCountdown={[1]={nClass=3,nIcon=346,nRefresh=10,nTime=100,szName="号角手"}},[3]={bCenterAlarm=true,bScreenHead=true,tMark={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true}}},
-      {dwID=37206,nFrame=67,szName="巨石",szNote="速度集火！",tCountdown={[1]={nClass=3,nIcon=5397,nRefresh=10,nTime=30,szName="下一次巨石"}},[3]={bBigFontAlarm=true,bScreenHead=true,tMark={[1]=false,[2]=false,[3]=false,[4]=false,[5]=true,[6]=false,[7]=false,[8]=false,[9]=false,[10]=false}}},
-      {dwID=36864,nFrame=47,tCountdown={[1]={nClass=7,nIcon=4531,nTime="7,断骨;26,狼牙炮火;65,虎啸;"}}},
+      {dwID=36872,nFrame=57,szName="黑油圈",tCountdown={{nClass=3,nIcon=4495,nRefresh=10,nTime=10,szName="火龙点名"}}},
+      {dwID=36876,nFrame=52,tCountdown={{nClass=3,nIcon=346,nRefresh=10,nTime=25,szName="火墙剩余时间"}},[3]={bBigFontAlarm=true}},
+      {dwID=36875,nFrame=57,szName="火龙追击",tCountdown={{nClass=3,nIcon=4495,nRefresh=10,nTime=30,szName="火龙追击"}}},
+      {dwID=36869,nFrame=52,tCountdown={{nClass=7,nIcon=4495,nTime="8,瞄准;22,火龙机雷;60,摧城一击;"},{nClass=6,nIcon=346,nRefresh=7,nTime="0.55,准备第一次火墙;0.25,准备第二次火墙;0.15,准备第三次火墙;"}}},
+      {dwID=37535,nFrame=47,szNote="速度集火！",tCountdown={{nClass=3,nIcon=346,nRefresh=10,nTime=100,szName="号角手"}},[3]={bCenterAlarm=true,bScreenHead=true,tMark={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true}}},
+      {dwID=37206,nFrame=67,szName="巨石",szNote="速度集火！",tCountdown={{nClass=3,nIcon=5397,nRefresh=10,nTime=30,szName="下一次巨石"}},[3]={bBigFontAlarm=true,bScreenHead=true,tMark={[1]=false,[2]=false,[3]=false,[4]=false,[5]=true,[6]=false,[7]=false,[8]=false,[9]=false,[10]=false}}},
+      {dwID=36864,nFrame=47,tCountdown={{nClass=7,nIcon=4531,nTime="7,断骨;26,狼牙炮火;65,虎啸;"}}},
       {dwID=41163,nFrame=52,szNote="材料·五彩石",[3]={bScreenHead=true}}
     },
     [192]={
-      {dwID=37006,nFrame=57,tCountdown={[1]={nClass=7,nIcon=4504,nRefresh=10,nTime=110,szName="转阶段准备跑圈"}},[3]={tMark={[1]=false,[2]=false,[3]=false,[4]=false,[5]=false,[6]=false,[7]=false,[8]=false,[9]=false,[10]=true}}},
+      {dwID=37006,nFrame=57,tCountdown={{nClass=7,nIcon=4504,nRefresh=10,nTime=110,szName="转阶段准备跑圈"}},[3]={tMark={[1]=false,[2]=false,[3]=false,[4]=false,[5]=false,[6]=false,[7]=false,[8]=false,[9]=false,[10]=true}}},
       {dwID=36977,nFrame=57,[3]={bCenterAlarm=true}},
       {dwID=36979,nFrame=57,[3]={bCenterAlarm=true}},
-      {dwID=36978,nFrame=57,tCountdown={[1]={nClass=3,nIcon=346,nRefresh=10,nTime=30,szName="小怪赤狼"}},[3]={bBigFontAlarm=true,bCenterAlarm=true,bFullScreen=true}},
+      {dwID=36978,nFrame=57,tCountdown={{nClass=3,nIcon=346,nRefresh=10,nTime=30,szName="小怪赤狼"}},[3]={bBigFontAlarm=true,bCenterAlarm=true,bFullScreen=true}},
       {dwID=36976,nFrame=57},
       {dwID=36861,nFrame=57,[3]={bCenterAlarm=true,tMark={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true}}},
       {dwID=36858,nFrame=57,szName="双生球（阴）",szNote="T出去挡蓝球！",[3]={bBigFontAlarm=true}},
       {dwID=36857,nFrame=57,szName="双生球（阳）",szNote="T出去挡红球！",[3]={bBigFontAlarm=true}},
       {dwID=36852,nFrame=57,szName="音波球（蓝）",szNote="蓝球！",[3]={bBigFontAlarm=true}},
       {dwID=36847,nFrame=57,szName="音波球（红）",szNote="红球！",[3]={bBigFontAlarm=true}},
-      {dwID=36845,nFrame=57,tCountdown={[1]={nClass=3,nIcon=4494,nRefresh=10,nTime=15,szName="音波连线"}},[3]={tMark={[1]=false,[2]=false,[3]=false,[4]=false,[5]=false,[6]=false,[7]=false,[8]=false,[9]=true,[10]=false}}},
+      {dwID=36845,nFrame=57,tCountdown={{nClass=3,nIcon=4494,nRefresh=10,nTime=15,szName="音波连线"}},[3]={tMark={[1]=false,[2]=false,[3]=false,[4]=false,[5]=false,[6]=false,[7]=false,[8]=false,[9]=true,[10]=false}}},
       {dwID=36846,nFrame=57,[3]={tMark={[1]=false,[2]=false,[3]=false,[4]=false,[5]=false,[6]=false,[7]=false,[8]=false,[9]=false,[10]=true}}},
       {dwID=39134,nFrame=57,szName="西营·爆破兵",[3]={bCenterAlarm=true,bScreenHead=true}}
     }
@@ -106,13 +106,13 @@
   TALK={
     [191]={
       {col={255,31,95},szContent="投石车支援！",szNote="注意躲避投石",szTarget="牛廷玠",[14]={bCenterAlarm=true,bFullScreen=true}},
-      {szContent="狼牙大军，兵临城下，炮火过处，寸草不生！",szNote="准备排火",szTarget="田布戈",tCountdown={[1]={nClass=14,nIcon=3430,nTime=18,szName="断骨"}},[14]={bCenterAlarm=true,bFullScreen=true}},
-      {szContent="统统去死吧！",szNote="虎啸",szTarget="田布戈",tCountdown={[1]={nClass=14,nIcon=3430,nTime=14,szName="断骨"}}}
+      {szContent="狼牙大军，兵临城下，炮火过处，寸草不生！",szNote="准备排火",szTarget="田布戈",tCountdown={{nClass=14,nIcon=3430,nTime=18,szName="断骨"}},[14]={bCenterAlarm=true,bFullScreen=true}},
+      {szContent="统统去死吧！",szNote="虎啸",szTarget="田布戈",tCountdown={{nClass=14,nIcon=3430,nTime=14,szName="断骨"}}}
     },
     [192]={
-      {szContent="你们果真有些门道……死士何在，保护本王运功！",szNote="进入回血阶段，打好减疗！",szTarget="史思明",tCountdown={[1]={key="史思明技能",nClass=14,nFrame=2,nIcon=4504,nRefresh=0,nTime="41,回血结束",szName=""}}},
-      {szContent="谁敢接我一掌！",szNote="毒血涌动",szTarget="史思明",tCountdown={[1]={key="毒血涌动",nClass=14,nIcon=4504,nTime=30,szName="毒血涌动"}}},
-      {szContent="糟糕，现在用这招还是太勉强了……",szNote="马上【断长生】，挂扶摇！",szTarget="史思明",tCountdown={[1]={key="史思明技能",nClass=14,nFrame=2,nIcon=329,nRefresh=0,nTime="5,可能断长生;25,随时断长生;",szName=""},[2]={nClass=14,nFrame=2,nIcon=2673,nTime=38,szName="P5血染·禁断"}},[14]={bCenterAlarm=true,bFullScreen=true}}
+      {szContent="你们果真有些门道……死士何在，保护本王运功！",szNote="进入回血阶段，打好减疗！",szTarget="史思明",tCountdown={{key="史思明技能",nClass=14,nFrame=2,nIcon=4504,nRefresh=0,nTime="41,回血结束",szName=""}}},
+      {szContent="谁敢接我一掌！",szNote="毒血涌动",szTarget="史思明",tCountdown={{key="毒血涌动",nClass=14,nIcon=4504,nTime=30,szName="毒血涌动"}}},
+      {szContent="糟糕，现在用这招还是太勉强了……",szNote="马上【断长生】，挂扶摇！",szTarget="史思明",tCountdown={{key="史思明技能",nClass=14,nFrame=2,nIcon=329,nRefresh=0,nTime="5,可能断长生;25,随时断长生;",szName=""},{nClass=14,nFrame=2,nIcon=2673,nTime=38,szName="P5血染·禁断"}},[14]={bCenterAlarm=true,bFullScreen=true}}
     }
   }
 }

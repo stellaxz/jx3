@@ -14,7 +14,7 @@
       {dwID=3098,nIcon=2121,nLevel=1,nScrutinyType=1,[1]={bTeamPanel=true}},
       {dwID=10240,nLevel=1,nScrutinyType=1,[1]={bBuffList=true}},
       {dwID=693,nIcon=905,nLevel=27,nScrutinyType=1},
-      {dwID=9769,nIcon=7466,nLevel=1,nScrutinyType=1,tCountdown={[1]={key="藏宝洞",nClass=1,nIcon=13,nTime=0,szName="名称"}},tKungFu={["SKILL#10003"]=true,["SKILL#10014"]=true,["SKILL#10021"]=true,["SKILL#10028"]=true,["SKILL#10080"]=true,["SKILL#10081"]=true,["SKILL#10175"]=true,["SKILL#10176"]=true,["SKILL#10225"]=true,["SKILL#10242"]=true,["SKILL#10447"]=true,["SKILL#10448"]=true},[1]={bBuffList=true}},
+      {dwID=9769,nIcon=7466,nLevel=1,nScrutinyType=1,tCountdown={{key="藏宝洞",nClass=1,nIcon=13,nTime=0,szName="名称"}},tKungFu={["SKILL#10003"]=true,["SKILL#10014"]=true,["SKILL#10021"]=true,["SKILL#10028"]=true,["SKILL#10080"]=true,["SKILL#10081"]=true,["SKILL#10175"]=true,["SKILL#10176"]=true,["SKILL#10225"]=true,["SKILL#10242"]=true,["SKILL#10447"]=true,["SKILL#10448"]=true},[1]={bBuffList=true}},
       {dwID=538,nLevel=4,nScrutinyType=1,tKungFu={["SKILL#10003"]=true,["SKILL#10014"]=true,["SKILL#10021"]=true,["SKILL#10028"]=true,["SKILL#10080"]=true,["SKILL#10081"]=true,["SKILL#10175"]=true,["SKILL#10176"]=true,["SKILL#10225"]=true,["SKILL#10242"]=true,["SKILL#10447"]=true,["SKILL#10448"]=true},[1]={bBuffList=true}},
       {dwID=684,nLevel=1,nScrutinyType=1,[1]={bBuffList=true}},
       {dwID=6182,nLevel=1,nScrutinyType=1,[1]={bBuffList=true}},
@@ -90,14 +90,14 @@
     [-1]={
       {dwID=15071,nLevel=1,szNote="打断！",[8]={bScreenHead=true}},
       {col={255,255,0},dwID=15115,nLevel=1,[8]={bBigFontAlarm=true}},
-      {dwID=7381,nLevel=1,nScrutinyType=4,tCountdown={[1]={nClass=9,nIcon=2665,nTime=12,szName="泰山压顶"}},[8]={bCenterAlarm=true}},
+      {dwID=7381,nLevel=1,nScrutinyType=4,tCountdown={{nClass=9,nIcon=2665,nTime=12,szName="泰山压顶"}},[8]={bCenterAlarm=true}},
       {dwID=16003,nLevel=1,nScrutinyType=1},
       {dwID=16004,nLevel=1,nScrutinyType=1},
       {dwID=16005,nLevel=1,nScrutinyType=1},
       {dwID=16006,nLevel=1,nScrutinyType=1},
       {dwID=16007,nLevel=1,nScrutinyType=1},
       {dwID=16083,nLevel=1,nScrutinyType=1,[9]={bCenterAlarm=true}},
-      {dwID=608,nLevel=1,tCountdown={[1]={key="提示1",nClass=8,nIcon=13,nRefresh=0,nTime=0,szName="清空倒计时：提示1"},[2]={key="提示2",nClass=8,nIcon=13,nRefresh=0,nTime=0,szName="清空倒计时：提示2"},[3]={key="提示3",nClass=8,nIcon=13,nRefresh=0,nTime=0,szName="清空倒计时：提示3"}}}
+      {dwID=608,nLevel=1,tCountdown={{key="提示1",nClass=8,nIcon=13,nRefresh=0,nTime=0,szName="清空倒计时：提示1"},{key="提示2",nClass=8,nIcon=13,nRefresh=0,nTime=0,szName="清空倒计时：提示2"},{key="提示3",nClass=8,nIcon=13,nRefresh=0,nTime=0,szName="清空倒计时：提示3"}}}
     },
     [189]={
       {dwID=9241,nLevel=1,szNote="后跳小轻功，避免眩晕!",[8]={bCenterAlarm=true,bFullScreen=true}}
@@ -110,80 +110,80 @@
   CHAT={
     [-1]={
       {col={95,127,255},szContent="出现可疑人物，快去一探究竟",[14]={bCenterAlarm=true}},
-      {szContent="你发现了一个藏宝洞！藏宝洞只存在两刻钟，务必速速前往挖掘宝藏！",szNote="藏宝洞出现了！",tCountdown={[1]={bHold=false,key="藏宝洞",nClass=14,nIcon=95,nTime=1800,szName="藏宝洞消失"}},[14]={bCenterAlarm=true}},
+      {szContent="你发现了一个藏宝洞！藏宝洞只存在两刻钟，务必速速前往挖掘宝藏！",szNote="藏宝洞出现了！",tCountdown={{bHold=false,key="藏宝洞",nClass=14,nIcon=95,nTime=1800,szName="藏宝洞消失"}},[14]={bCenterAlarm=true}},
       {col={255,0,0},szContent="$me",szTarget="%",[14]={bCenterAlarm=true}},
       {szContent="$team",szTarget="%"},
       {szContent="!$me",szTarget="%"},
-      {bReg=true,szContent="江湖快马飞报！侠士“.*”在白龙口捕获15级稀有坐骑马“赤兔”的马驹！假以时日，此马驹必能成长为一匹纵横江湖的宝马神骏！\",tCountdown={[1]={bHold=true,key="赤兔",nClass=20,nFrame=8,nIcon=5991,nTime="30,赤兔被抓"}}},
-      {bReg=true,szContent="江湖快马飞报！侠士“.*”在黑龙沼捕获13级稀有坐骑马“里飞沙”的马驹！假以时日，此马驹必能成长为一匹纵横江湖的宝马神骏！\",tCountdown={[1]={bHold=true,key="黑龙沼",nClass=20,nFrame=8,nIcon=1898,nTime="30,黑龙里飞沙被抓"}}},
-      {bReg=true,szContent="江湖快马飞报！侠士“.*”在无量山捕获11级稀有坐骑马“赤蛇”的马驹！假以时日，此马驹必能成长为一匹纵横江湖的宝马神骏！\",tCountdown={[1]={bHold=true,key="无量山",nClass=20,nFrame=8,nIcon=1895,nTime="30,无量山赤蛇被抓"}}},
-      {bReg=true,szContent="江湖快马飞报！侠士“.*”在白龙口捕获10级稀有坐骑马“绝尘”的马驹！假以时日，此马驹必能成长为一匹纵横江湖的宝马神骏！\",tCountdown={[1]={bHold=true,key="白龙口",nClass=20,nFrame=8,nIcon=1894,nTime="30,白龙口绝尘被抓"}}},
-      {bReg=true,szContent="江湖快马飞报！侠士“.*”在昆仑捕获12级稀有坐骑马“闪电”的马驹！假以时日，此马驹必能成长为一匹纵横江湖的宝马神骏！\",tCountdown={[1]={bHold=true,key="昆仑",nClass=20,nFrame=8,nIcon=1897,nTime="30,昆仑闪电被抓"}}},
-      {bReg=true,szContent="江湖快马飞报！侠士“.*”在南屏山捕获12级稀有坐骑马“闪电”的马驹！假以时日，此马驹必能成长为一匹纵横江湖的宝马神骏！\",tCountdown={[1]={bHold=true,key="南屏山",nClass=20,nFrame=8,nIcon=1897,nTime="30,南屏山闪电被抓"}}},
-      {szContent="江湖快马飞报！段氏马场发布最新《九州寻驹图》消息：约五到十分钟后，将有宝马良驹在黑龙沼出没！各位侠士可以前往捕捉！切莫错过！\",tCountdown={[1]={bHold=true,key="黑龙沼",nClass=20,nFrame=5,nIcon=1898,nRefresh=300,nTime="300,黑龙里飞沙刷新;600,黑龙里飞沙已刷;"}}},
-      {szContent="江湖快马飞报！段氏马场发布最新《九州寻驹图》消息：约五到十分钟后，将有宝马良驹在无量山出没！各位侠士可以前往捕捉！切莫错过！\",tCountdown={[1]={bHold=true,key="无量山",nClass=20,nFrame=6,nIcon=1895,nRefresh=300,nTime="300,无量山赤蛇刷新;600,无量山赤蛇已刷;"}}},
-      {szContent="江湖快马飞报！段氏马场发布最新《九州寻驹图》消息：约五到十分钟后，将有宝马良驹在白龙口出没！各位侠士可以前往捕捉！切莫错过！\",tCountdown={[1]={bHold=true,key="白龙口",nClass=20,nFrame=6,nIcon=1894,nRefresh=300,nTime="300,白龙口绝尘刷新;600,白龙口绝尘已刷;"}}},
-      {szContent="江湖快马飞报！段氏马场发布最新《九州寻驹图》消息：约五到十分钟后，将有宝马良驹在昆仑出没！各位侠士可以前往捕捉！切莫错过！\",tCountdown={[1]={bHold=true,key="昆仑",nClass=20,nFrame=6,nIcon=1897,nRefresh=300,nTime="300,昆仑闪电刷新;600,昆仑闪电已刷;"}}},
-      {szContent="江湖快马飞报！段氏马场发布最新《九州寻驹图》消息：约五到十分钟后，将有宝马良驹在南屏山出没！各位侠士可以前往捕捉！切莫错过！\",tCountdown={[1]={bHold=true,key="南屏山",nClass=20,nFrame=6,nIcon=1897,nRefresh=300,nTime="300,南屏山闪电刷新;600,南屏山闪电已刷;"}}}
+      {bReg=true,szContent="江湖快马飞报！侠士“.*”在白龙口捕获15级稀有坐骑马“赤兔”的马驹！假以时日，此马驹必能成长为一匹纵横江湖的宝马神骏！",tCountdown={{bHold=true,key="赤兔",nClass=20,nFrame=8,nIcon=5991,nTime="30,赤兔被抓"}}},
+      {bReg=true,szContent="江湖快马飞报！侠士“.*”在黑龙沼捕获13级稀有坐骑马“里飞沙”的马驹！假以时日，此马驹必能成长为一匹纵横江湖的宝马神骏！",tCountdown={{bHold=true,key="黑龙沼",nClass=20,nFrame=8,nIcon=1898,nTime="30,黑龙里飞沙被抓"}}},
+      {bReg=true,szContent="江湖快马飞报！侠士“.*”在无量山捕获11级稀有坐骑马“赤蛇”的马驹！假以时日，此马驹必能成长为一匹纵横江湖的宝马神骏！",tCountdown={{bHold=true,key="无量山",nClass=20,nFrame=8,nIcon=1895,nTime="30,无量山赤蛇被抓"}}},
+      {bReg=true,szContent="江湖快马飞报！侠士“.*”在白龙口捕获10级稀有坐骑马“绝尘”的马驹！假以时日，此马驹必能成长为一匹纵横江湖的宝马神骏！",tCountdown={{bHold=true,key="白龙口",nClass=20,nFrame=8,nIcon=1894,nTime="30,白龙口绝尘被抓"}}},
+      {bReg=true,szContent="江湖快马飞报！侠士“.*”在昆仑捕获12级稀有坐骑马“闪电”的马驹！假以时日，此马驹必能成长为一匹纵横江湖的宝马神骏！",tCountdown={{bHold=true,key="昆仑",nClass=20,nFrame=8,nIcon=1897,nTime="30,昆仑闪电被抓"}}},
+      {bReg=true,szContent="江湖快马飞报！侠士“.*”在南屏山捕获12级稀有坐骑马“闪电”的马驹！假以时日，此马驹必能成长为一匹纵横江湖的宝马神骏！",tCountdown={{bHold=true,key="南屏山",nClass=20,nFrame=8,nIcon=1897,nTime="30,南屏山闪电被抓"}}},
+      {szContent="江湖快马飞报！段氏马场发布最新《九州寻驹图》消息：约五到十分钟后，将有宝马良驹在黑龙沼出没！各位侠士可以前往捕捉！切莫错过！",tCountdown={{bHold=true,key="黑龙沼",nClass=20,nFrame=5,nIcon=1898,nRefresh=300,nTime="300,黑龙里飞沙刷新;600,黑龙里飞沙已刷;"}}},
+      {szContent="江湖快马飞报！段氏马场发布最新《九州寻驹图》消息：约五到十分钟后，将有宝马良驹在无量山出没！各位侠士可以前往捕捉！切莫错过！",tCountdown={{bHold=true,key="无量山",nClass=20,nFrame=6,nIcon=1895,nRefresh=300,nTime="300,无量山赤蛇刷新;600,无量山赤蛇已刷;"}}},
+      {szContent="江湖快马飞报！段氏马场发布最新《九州寻驹图》消息：约五到十分钟后，将有宝马良驹在白龙口出没！各位侠士可以前往捕捉！切莫错过！",tCountdown={{bHold=true,key="白龙口",nClass=20,nFrame=6,nIcon=1894,nRefresh=300,nTime="300,白龙口绝尘刷新;600,白龙口绝尘已刷;"}}},
+      {szContent="江湖快马飞报！段氏马场发布最新《九州寻驹图》消息：约五到十分钟后，将有宝马良驹在昆仑出没！各位侠士可以前往捕捉！切莫错过！",tCountdown={{bHold=true,key="昆仑",nClass=20,nFrame=6,nIcon=1897,nRefresh=300,nTime="300,昆仑闪电刷新;600,昆仑闪电已刷;"}}},
+      {szContent="江湖快马飞报！段氏马场发布最新《九州寻驹图》消息：约五到十分钟后，将有宝马良驹在南屏山出没！各位侠士可以前往捕捉！切莫错过！",tCountdown={{bHold=true,key="南屏山",nClass=20,nFrame=6,nIcon=1897,nRefresh=300,nTime="300,南屏山闪电刷新;600,南屏山闪电已刷;"}}}
     },
     [22]={
-      {szContent="赵新宇死亡时，从他身上遗落一把短笛，貌似是他的随身信物。\",szNote="赵新宇已被击杀",tCountdown={[1]={key="攻防提示2",nClass=20,nIcon=4837,nTime=60,szName="浩气可拾取信物"}}},
-      {szContent="随着方超的死亡，一把短笛掉了出来，貌似是他的随身信物。\",szNote="方超已被击杀",tCountdown={[1]={key="攻防提示1",nClass=20,nFrame=2,nIcon=4838,nTime=60,szName="恶人可拾取信物"}}}
+      {szContent="赵新宇死亡时，从他身上遗落一把短笛，貌似是他的随身信物。",szNote="赵新宇已被击杀",tCountdown={{key="攻防提示2",nClass=20,nIcon=4837,nTime=60,szName="浩气可拾取信物"}}},
+      {szContent="随着方超的死亡，一把短笛掉了出来，貌似是他的随身信物。",szNote="方超已被击杀",tCountdown={{key="攻防提示1",nClass=20,nFrame=2,nIcon=4838,nTime=60,szName="恶人可拾取信物"}}}
     },
     [30]={
-      {szContent="随着霸图的死亡，一柄钢刀从他身上滑落，似乎是他的随身信物。\",tCountdown={[1]={key="攻防提示2",nClass=20,nIcon=4837,nTime=60,szName="浩气可拾取信物"}}},
-      {szContent="随着孙永恒的死亡，一柄短剑从他身上滑落，似乎是他的随身信物。\",tCountdown={[1]={key="攻防提示1",nClass=20,nFrame=2,nIcon=4838,nTime=60,szName="恶人可拾取信物"}}}
+      {szContent="随着霸图的死亡，一柄钢刀从他身上滑落，似乎是他的随身信物。",tCountdown={{key="攻防提示2",nClass=20,nIcon=4837,nTime=60,szName="浩气可拾取信物"}}},
+      {szContent="随着孙永恒的死亡，一柄短剑从他身上滑落，似乎是他的随身信物。",tCountdown={{key="攻防提示1",nClass=20,nFrame=2,nIcon=4838,nTime=60,szName="恶人可拾取信物"}}}
     },
     [48]={
-      {szContent="战斗开始。\",tCountdown={[1]={nClass=20,nFrame=6,nIcon=3139,nTime="30,残页首次刷新;80,武典残页刷新;130,武典残页刷新;180,武典残页刷新;230,武典残页刷新;280,武典残页刷新;330,武典残页刷新;380,武典残页刷新;430,武典残页刷新;480,武典残页刷新;530,武典残页刷新;580,武典残页刷新;630,武典残页刷新;680,武典残页刷新;730,武典残页刷新;780,武典残页刷新;830,武典残页刷新;880,武典残页刷新;930,武典残页刷新;980,武典残页刷新;1030,武典残页刷新"}}}
+      {szContent="战斗开始。",tCountdown={{nClass=20,nFrame=6,nIcon=3139,nTime="30,残页首次刷新;80,武典残页刷新;130,武典残页刷新;180,武典残页刷新;230,武典残页刷新;280,武典残页刷新;330,武典残页刷新;380,武典残页刷新;430,武典残页刷新;480,武典残页刷新;530,武典残页刷新;580,武典残页刷新;630,武典残页刷新;680,武典残页刷新;730,武典残页刷新;780,武典残页刷新;830,武典残页刷新;880,武典残页刷新;930,武典残页刷新;980,武典残页刷新;1030,武典残页刷新"}}}
     }
   },
   CIRCLE={
     [-1]={
-      {bEnable=true,dwType=3,key="遗失的货物",szNote="贸易物资",tCircles={[1]={bBorder=true,bEnable=true,col={211,229,37},nAngle=360,nRadius=0.5}}},
-      {bEnable=true,dwType=3,key="红包",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=0.3}}},
-      {bDrawName=true,bEnable=true,dwType=3,key="标记_黄",szNote="2号点",tCircles={[1]={bBorder=true,bEnable=true,col={255,128,0},nAngle=360,nRadius=1}}},
-      {bDrawName=true,bEnable=true,dwType=3,key="标记_蓝",szNote="3号点",tCircles={[1]={bBorder=true,bEnable=true,col={40,140,218},nAngle=360,nRadius=1}}},
-      {bDrawName=true,bEnable=true,dwType=3,key="标记_白",szNote="1号点",tCircles={[1]={bBorder=true,bEnable=true,col={255,255,255},nAngle=360,nRadius=1}}},
-      {bDrawName=true,bEnable=true,dwType=3,key="标记_绿",szNote="4号点",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=1}}},
-      {bDrawName=true,bEnable=true,dwType=3,key="标记_红",szNote="5号点",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=1}}},
-      {bDrawName=true,bEnable=true,dwType=3,key="标记6",szNote="6号点",tCircles={[1]={bBorder=true,bEnable=true,col={170,65,180},nAngle=360,nRadius=1}}},
-      {bDrawName=true,bEnable=true,dwType=3,key="标记7",szNote="7号点",tCircles={[1]={bBorder=true,bEnable=true,col={170,65,180},nAngle=360,nRadius=1}}},
-      {bDrawName=true,bEnable=true,dwType=3,key="标记8",szNote="8号点",tCircles={[1]={bBorder=true,bEnable=true,col={211,229,37},nAngle=360,nRadius=1}}},
-      {bDrawName=true,bEnable=true,dwType=3,key="标记9",szNote="9号点",tCircles={[1]={bBorder=true,bEnable=true,col={65,50,160},nAngle=360,nRadius=1}}},
-      {bDrawName=true,bEnable=true,dwType=3,key="标记10",szNote="10号点",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=1}}},
-      {bEnable=true,dwType=3,key="神秘小头目",tCircles={[1]={bBorder=true,bEnable=true,col={255,100,255},nAngle=360,nRadius=4}}},
-      {bDrawName=true,dwType=3,key="封门",szNote="内·3",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=1}}},
-      {bDrawName=true,dwType=3,key="升景",szNote="外·2",tCircles={[1]={bBorder=true,bEnable=true,col={255,255,255},nAngle=360,nRadius=1}}},
-      {bDrawName=true,dwType=3,key="连华",szNote="奶·4",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=1}}},
-      {bDrawName=true,dwType=3,key="重御",szNote="T·1",tCircles={[1]={bBorder=true,bEnable=true,col={65,50,160},nAngle=360,nRadius=1}}},
-      {bDoodadLine=false,dwType=5,key="鲜花束",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=2}}},
-      {bDrawName=true,dwType=3,key="陷阱",szNote="半成品陷阱",tCircles={[1]={bBorder=true,bEnable=true,col={170,65,180},nAngle=360,nRadius=2}}},
-      {dwType=3,key="气场镇山河",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=4}}},
-      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18573,szNote="八级·龙子",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
-      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18575,szNote="九级·麟驹",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
-      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18579,szNote="十一级·赤蛇",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
-      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18581,szNote="十二级·闪电",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
-      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18577,szNote="十级·绝尘",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
-      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18583,szNote="十三级·里飞沙",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
-      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=36389,szNote="十五级·赤兔",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=10}}},
-      {bEnable=true,bTarget=false,dwType=3,key=36453,szNote="赤兔护卫",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=6}}}
+      {bEnable=true,dwType=3,key="遗失的货物",szNote="贸易物资",tCircles={{bBorder=true,bEnable=true,col={211,229,37},nAngle=360,nRadius=0.5}}},
+      {bEnable=true,dwType=3,key="红包",tCircles={{bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=0.3}}},
+      {bDrawName=true,bEnable=true,dwType=3,key="标记_黄",szNote="2号点",tCircles={{bBorder=true,bEnable=true,col={255,128,0},nAngle=360,nRadius=1}}},
+      {bDrawName=true,bEnable=true,dwType=3,key="标记_蓝",szNote="3号点",tCircles={{bBorder=true,bEnable=true,col={40,140,218},nAngle=360,nRadius=1}}},
+      {bDrawName=true,bEnable=true,dwType=3,key="标记_白",szNote="1号点",tCircles={{bBorder=true,bEnable=true,col={255,255,255},nAngle=360,nRadius=1}}},
+      {bDrawName=true,bEnable=true,dwType=3,key="标记_绿",szNote="4号点",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=1}}},
+      {bDrawName=true,bEnable=true,dwType=3,key="标记_红",szNote="5号点",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=1}}},
+      {bDrawName=true,bEnable=true,dwType=3,key="标记6",szNote="6号点",tCircles={{bBorder=true,bEnable=true,col={170,65,180},nAngle=360,nRadius=1}}},
+      {bDrawName=true,bEnable=true,dwType=3,key="标记7",szNote="7号点",tCircles={{bBorder=true,bEnable=true,col={170,65,180},nAngle=360,nRadius=1}}},
+      {bDrawName=true,bEnable=true,dwType=3,key="标记8",szNote="8号点",tCircles={{bBorder=true,bEnable=true,col={211,229,37},nAngle=360,nRadius=1}}},
+      {bDrawName=true,bEnable=true,dwType=3,key="标记9",szNote="9号点",tCircles={{bBorder=true,bEnable=true,col={65,50,160},nAngle=360,nRadius=1}}},
+      {bDrawName=true,bEnable=true,dwType=3,key="标记10",szNote="10号点",tCircles={{bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=1}}},
+      {bEnable=true,dwType=3,key="神秘小头目",tCircles={{bBorder=true,bEnable=true,col={255,100,255},nAngle=360,nRadius=4}}},
+      {bDrawName=true,dwType=3,key="封门",szNote="内·3",tCircles={{bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=1}}},
+      {bDrawName=true,dwType=3,key="升景",szNote="外·2",tCircles={{bBorder=true,bEnable=true,col={255,255,255},nAngle=360,nRadius=1}}},
+      {bDrawName=true,dwType=3,key="连华",szNote="奶·4",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=1}}},
+      {bDrawName=true,dwType=3,key="重御",szNote="T·1",tCircles={{bBorder=true,bEnable=true,col={65,50,160},nAngle=360,nRadius=1}}},
+      {bDoodadLine=false,dwType=5,key="鲜花束",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=2}}},
+      {bDrawName=true,dwType=3,key="陷阱",szNote="半成品陷阱",tCircles={{bBorder=true,bEnable=true,col={170,65,180},nAngle=360,nRadius=2}}},
+      {dwType=3,key="气场镇山河",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=4}}},
+      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18573,szNote="八级·龙子",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
+      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18575,szNote="九级·麟驹",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
+      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18579,szNote="十一级·赤蛇",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
+      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18581,szNote="十二级·闪电",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
+      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18577,szNote="十级·绝尘",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
+      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18583,szNote="十三级·里飞沙",tCircles={{bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
+      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=36389,szNote="十五级·赤兔",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=10}}},
+      {bEnable=true,bTarget=false,dwType=3,key=36453,szNote="赤兔护卫",tCircles={{bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=6}}}
     },
     [48]={
-      {bDrawName=true,bEnable=true,dwType=3,key=6620,szNote="武典残页",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=2}}}
+      {bDrawName=true,bEnable=true,dwType=3,key=6620,szNote="武典残页",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=2}}}
     },
     [74]={
-      {dwType=3,key="猪九戒",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=10}}}
+      {dwType=3,key="猪九戒",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=10}}}
     },
     [190]={
-      {bDrawName=false,bEnable=true,dwType=5,key=4761,szNote="冰泉水",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=2}}},
-      {bEnable=true,dwType=3,key="小火圈",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=4}}},
-      {dwType=3,key="伤害圈",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=7}}}
+      {bDrawName=false,bEnable=true,dwType=5,key=4761,szNote="冰泉水",tCircles={{bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=2}}},
+      {bEnable=true,dwType=3,key="小火圈",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=4}}},
+      {dwType=3,key="伤害圈",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=7}}}
     },
     [217]={
-      {bDrawName=false,dwType=3,key=47923,szNote="火把落点",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=2}}},
-      {bDrawName=false,dwType=3,key=46995,szNote="怪物点·单",tCircles={[1]={bBorder=true,bEnable=true,col={40,140,218},nAngle=360,nRadius=1}}},
-      {bDrawName=false,dwType=3,key=46997,szNote="怪物点·多",tCircles={[1]={bBorder=false,bEnable=true,col={170,65,180},nAngle=360,nRadius=1}}}
+      {bDrawName=false,dwType=3,key=47923,szNote="火把落点",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=2}}},
+      {bDrawName=false,dwType=3,key=46995,szNote="怪物点·单",tCircles={{bBorder=true,bEnable=true,col={40,140,218},nAngle=360,nRadius=1}}},
+      {bDrawName=false,dwType=3,key=46997,szNote="怪物点·多",tCircles={{bBorder=false,bEnable=true,col={170,65,180},nAngle=360,nRadius=1}}}
     }
   },
   DEBUFF={
@@ -199,7 +199,7 @@
       {dwID=9299,nLevel=1,szName="杯水",[1]={bBuffList=true}},
       {dwID=2316,nLevel=5,nScrutinyType=1,[1]={bBuffList=true,bTeamPanel=true}},
       {dwID=10834,nLevel=3,[1]={bScreenHead=true}},
-      {dwID=10186,nLevel=1,nScrutinyType=1,tCountdown={[1]={nClass=1,nFrame=3,nIcon=7052,nRefresh=0,nTime=7,szName="孤影重置"}},[1]={bCenterAlarm=true}},
+      {dwID=10186,nLevel=1,nScrutinyType=1,tCountdown={{nClass=1,nFrame=3,nIcon=7052,nRefresh=0,nTime=7,szName="孤影重置"}},[1]={bCenterAlarm=true}},
       {dwID=3399,nLevel=1,nScrutinyType=1,tKungFu={["SKILL#10224"]=true},[1]={bBuffList=true}},
       {dwID=10175,nLevel=3,szName="三鼓",[1]={bBuffList=true}},
       {dwID=10879,nLevel=1},
@@ -252,7 +252,7 @@
   },
   TALK={
     [190]={
-      {szContent="你驱散了王史涯的无敌！",tCountdown={[1]={nClass=14,nIcon=3911,nTime=30,szName="【冰泉水】冷却时间"}}}
+      {szContent="你驱散了王史涯的无敌！",tCountdown={{nClass=14,nIcon=3911,nTime=30,szName="【冰泉水】冷却时间"}}}
     }
   }
 }

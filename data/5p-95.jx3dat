@@ -2,15 +2,15 @@
   BUFF={},
   CASTING={
     [224]={
-      {col={255,2,2},dwID=13656,nLevel=1,tCountdown={[1]={nClass=9,nIcon=3398,nRefresh=7,nTime=15,szName="幽冥鬼步"}},[8]={bCenterAlarm=true}}
+      {col={255,2,2},dwID=13656,nLevel=1,tCountdown={{nClass=9,nIcon=3398,nRefresh=7,nTime=15,szName="幽冥鬼步"}},[8]={bCenterAlarm=true}}
     },
     [227]={
-      {dwID=13809,nLevel=5,tCountdown={[1]={nClass=9,nIcon=7218,nRefresh=7,nTime=55,szName="白尘障壁（反弹）"}},[9]={bCenterAlarm=true}}
+      {dwID=13809,nLevel=5,tCountdown={{nClass=9,nIcon=7218,nRefresh=7,nTime=55,szName="白尘障壁（反弹）"}},[9]={bCenterAlarm=true}}
     },
     [228]={
       {dwID=13796,nLevel=2,[9]={bBigFontAlarm=true,bFullScreen=true}},
-      {col={255,238,2},dwID=13856,nLevel=1,szNote="打断！",tCountdown={[1]={key="打断",nClass=8,nIcon=2874,nRefresh=7,nTime=33,szName="准备下一次打断"}},[8]={bCenterAlarm=true,bScreenHead=true}},
-      {col={255,250,2},dwID=13855,nLevel=1,szNote="打断！",tCountdown={[1]={key="打断",nClass=8,nIcon=2874,nRefresh=7,nTime=33,szName="准备下一次打断"}},[8]={bCenterAlarm=true,bScreenHead=true}},
+      {col={255,238,2},dwID=13856,nLevel=1,szNote="打断！",tCountdown={{key="打断",nClass=8,nIcon=2874,nRefresh=7,nTime=33,szName="准备下一次打断"}},[8]={bCenterAlarm=true,bScreenHead=true}},
+      {col={255,250,2},dwID=13855,nLevel=1,szNote="打断！",tCountdown={{key="打断",nClass=8,nIcon=2874,nRefresh=7,nTime=33,szName="准备下一次打断"}},[8]={bCenterAlarm=true,bScreenHead=true}},
       {bMonTarget=true,dwID=15074,nLevel=1,[8]={bCenterAlarm=true}},
       {bMonTarget=true,dwID=13758,nLevel=1,[8]={bCenterAlarm=true}}
     },
@@ -22,14 +22,14 @@
   CHAT={},
   CIRCLE={
     [224]={
-      {dwType=3,key="看舞",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=120,nRadius=4},[2]={bBorder=true,bEnable=true,col={255,255,255},nAngle=360,nRadius=4}}}
+      {dwType=3,key="看舞",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=120,nRadius=4},{bBorder=true,bEnable=true,col={255,255,255},nAngle=360,nRadius=4}}}
     },
     [225]={
-      {dwType=3,key="刺客聂政",tCircles={[1]={bBorder=false,bEnable=true,col={255,0,0},nAngle=50,nRadius=6}}},
-      {dwType=3,key=46475,szNote="凤息颜",tCircles={[1]={bBorder=false,bEnable=true,col={255,128,0},nAngle=30,nRadius=10}}}
+      {dwType=3,key="刺客聂政",tCircles={{bBorder=false,bEnable=true,col={255,0,0},nAngle=50,nRadius=6}}},
+      {dwType=3,key=46475,szNote="凤息颜",tCircles={{bBorder=false,bEnable=true,col={255,128,0},nAngle=30,nRadius=10}}}
     },
     [229]={
-      {dwType=3,key="平花秀夜",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=5}}}
+      {dwType=3,key="平花秀夜",tCircles={{bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=5}}}
     }
   },
   DEBUFF={
@@ -50,21 +50,21 @@
   NPC={
     [224]={
       {dwID=46466,nFrame=57,[3]={bCenterAlarm=true}},
-      {dwID=46441,nFrame=47,tCountdown={[1]={nClass=7,nIcon=2028,nRefresh=7,nTime="60,蓄力;85,愤怒状态"}}}
+      {dwID=46441,nFrame=47,tCountdown={{nClass=7,nIcon=2028,nRefresh=7,nTime="60,蓄力;85,愤怒状态"}}}
     },
     [225]={
-      {dwID=46475,nFrame=47,tCountdown={[1]={nClass=7,nIcon=7132,nTime=52,szName="音潮倾湖"}}}
+      {dwID=46475,nFrame=47,tCountdown={{nClass=7,nIcon=7132,nTime=52,szName="音潮倾湖"}}}
     },
     [227]={
-      {dwID=46560,nFrame=57,tCountdown={[1]={nClass=7,nIcon=7218,nRefresh=7,nTime=23,szName="白尘障壁（反弹）"}}}
+      {dwID=46560,nFrame=57,tCountdown={{nClass=7,nIcon=7218,nRefresh=7,nTime=23,szName="白尘障壁（反弹）"}}}
     },
     [228]={
-      {dwID=46671,nFrame=57,tCountdown={[1]={key="打断",nClass=7,nIcon=2874,nTime=30,szName="准备打断【拓跋思南】"}}},
-      {dwID=46682,nFrame=57,tCountdown={[1]={bHold=false,key="打断",nClass=7,nIcon=2874,nTime=28,szName="准备打断【李忘生】"}}}
+      {dwID=46671,nFrame=57,tCountdown={{key="打断",nClass=7,nIcon=2874,nTime=30,szName="准备打断【拓跋思南】"}}},
+      {dwID=46682,nFrame=57,tCountdown={{bHold=false,key="打断",nClass=7,nIcon=2874,nTime=28,szName="准备打断【李忘生】"}}}
     },
     [229]={
-      {dwID=46899,nFrame=47,tCountdown={[1]={nClass=3,nIcon=7454,nTime=20,szName="流风五连斩"}}},
-      {dwID=46911,nFrame=57,tCountdown={[1]={nClass=3,nIcon=7454,nRefresh=10,nTime=39,szName="流风五连斩"}}}
+      {dwID=46899,nFrame=47,tCountdown={{nClass=3,nIcon=7454,nTime=20,szName="流风五连斩"}}},
+      {dwID=46911,nFrame=57,tCountdown={{nClass=3,nIcon=7454,nRefresh=10,nTime=39,szName="流风五连斩"}}}
     }
   },
   TALK={}

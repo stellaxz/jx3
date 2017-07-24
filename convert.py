@@ -68,27 +68,26 @@ def _parse(index, fields):
   return index
 
 
-def to_string(parsed_data, indent=0):
+def to_string(parsed_data, indent=0, obj_name=''):
   if not isinstance(parsed_data, dict):
     return parsed_data
   str_keys = [k for k in parsed_data if not isinstance(k, int)]
   int_keys = [k for k in parsed_data if isinstance(k, int)]
-  fields = (
-      [(k, to_string(parsed_data[k], indent=indent+2)) for k in sorted(str_keys)] +
-      [('[%d]' % k, to_string(parsed_data[k], indent=indent+2)) for k in sorted(int_keys)]
-  )
+  fields = [('%s=' % k, to_string(parsed_data[k], indent=indent+2, obj_name=k)) for k in sorted(str_keys)]
+  if obj_name in ['tCircles', 'tCountdown', 'col'] or indent == 4:
+    fields.extend(
+        [('', to_string(parsed_data[k], indent=indent+2, obj_name=k)) for k in sorted(int_keys)])
+  else:
+    fields.extend(
+        [('[%d]=' % k, to_string(parsed_data[k], indent=indent+2, obj_name=k)) for k in sorted(int_keys)])
   if indent >= 6:
     pre = ''
-    content = ','.join(['%s=%s' % (v[0], v[1]) for v in fields])
     newline = ''
-  elif indent == 4:
-    pre = ' ' * (indent + 2)
-    content = ',\r\n'.join(['%s%s' %(pre, v[1]) for v in fields])
-    newline = '\r\n'
   else:
     pre = ' ' * (indent + 2)
-    content = ',\r\n'.join(['%s%s=%s' % (pre, v[0], v[1]) for v in fields])
     newline = '\r\n'
+  join_str = ',' + newline
+  content = join_str.join(['%s%s%s' % (pre, v[0], v[1]) for v in fields])
   if not content:
     return '{}'
   if pre:
@@ -134,9 +133,6 @@ else:
   lua_obj = parse(data_string)
 
 result = to_string(lua_obj[1], 0)
-result = re.sub(
-    r'col={\[1\]=(\d+),\[2\]=(\d+),\[3\]=(\d+)}',
-    r'col={\g<1>,\g<2>,\g<3>}', result)
 print result
 
 with open(sys.argv[2], 'w+') as f:
