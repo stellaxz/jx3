@@ -224,7 +224,7 @@
       {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18579,szNote="十一级·赤蛇",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
       {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18581,szNote="十二级·闪电",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
       {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18577,szNote="十级·绝尘",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
-      {Circles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}},bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18583,szNote="十三级·里飞沙"},
+      {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=18583,szNote="十三级·里飞沙",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,0},nAngle=360,nRadius=15}}},
       {bDrawLine=true,bDrawName=true,bEnable=true,bFlash=true,bScreenHead=true,bTarget=true,dwType=3,key=36389,szNote="十五级·赤兔",tCircles={[1]={bBorder=true,bEnable=true,col={255,0,0},nAngle=360,nRadius=10}}},
       {bEnable=true,bTarget=false,dwType=3,key=36453,szNote="赤兔护卫",tCircles={[1]={bBorder=true,bEnable=true,col={0,255,255},nAngle=360,nRadius=6}}}
     },
