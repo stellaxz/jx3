@@ -115,25 +115,25 @@ def merge_section(s_1, s_2):
 
 FILES = ['base','25p-80','10p-90','5p-95']
 
-print sys.argv[1]
-print sys.argv
 
 if sys.argv[1] == 'all':
-  lua_obj = {1:{}}
+  all_obj = {1:{}}
   for f_name in FILES:
     with open('data/%s.jx3dat' % f_name, 'r') as f:
       data_string = f.read().decode('gbk')
-      obj = parse(data_string)
-      merge_root(lua_obj[1], obj[1])
+    obj = parse(data_string)
+    merge_root(all_obj[1], obj[1])
+    result = to_string(obj[1], 0)
+    with open('data/%s.jx3dat' % f_name, 'w+') as f:
+      f.write(result.encode('gbk'))
+  result = to_string(all_obj[1], 0)
+  with open('data/all.jx3dat', 'w+') as f:
+    f.write(result.encode('gbk'))
 
 else:
   with open(sys.argv[1], 'r') as f:
     data_string = f.read().decode('gbk')
-
-  lua_obj = parse(data_string)
-
-result = to_string(lua_obj[1], 0)
-print result
-
-with open(sys.argv[2], 'w+') as f:
-  f.write(result.encode('gbk'))
+  obj = parse(data_string)
+  result = to_string(obj[1], 0)
+  with open(sys.argv[2], 'w+') as f:
+    f.write(result.encode('gbk'))

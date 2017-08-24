@@ -447,7 +447,7 @@
       {dwID=37535,nFrame=47,szNote="速度集火！",tCountdown={{nClass=3,nIcon=346,nRefresh=10,nTime=100,szName="号角手"}},[3]={bCenterAlarm=true,bScreenHead=true,tMark={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true}}},
       {dwID=37206,nFrame=67,szName="巨石",szNote="速度集火！",tCountdown={{nClass=3,nIcon=5397,nRefresh=10,nTime=30,szName="下一次巨石"}},[3]={bBigFontAlarm=true,bScreenHead=true,tMark={[1]=false,[2]=false,[3]=false,[4]=false,[5]=true,[6]=false,[7]=false,[8]=false,[9]=false,[10]=false}}},
       {dwID=36864,nFrame=47,tCountdown={{nClass=7,nIcon=4531,nTime="7,断骨;26,狼牙炮火;65,虎啸;"}}},
-      {dwID=41163,nFrame=52,szNote="材料·五彩石",[3]={bScreenHead=true}}
+      {dwID=41163,nFrame=52,[3]={bScreenHead=true,tMark={[1]=true,[2]=false,[3]=false,[4]=false,[5]=false,[6]=false,[7]=false,[8]=false,[9]=false,[10]=false}}}
     },
     [192]={
       {dwID=37006,nFrame=57,tCountdown={{nClass=7,nIcon=4504,nRefresh=10,nTime=110,szName="转阶段准备跑圈"}},[3]={tMark={[1]=false,[2]=false,[3]=false,[4]=false,[5]=false,[6]=false,[7]=false,[8]=false,[9]=false,[10]=true}}},
@@ -462,7 +462,8 @@
       {dwID=36847,nFrame=57,szName="音波球（红）",szNote="红球！",[3]={bBigFontAlarm=true}},
       {dwID=36845,nFrame=57,tCountdown={{nClass=3,nIcon=4494,nRefresh=10,nTime=15,szName="音波连线"}},[3]={tMark={[1]=false,[2]=false,[3]=false,[4]=false,[5]=false,[6]=false,[7]=false,[8]=false,[9]=true,[10]=false}}},
       {dwID=36846,nFrame=57,[3]={tMark={[1]=false,[2]=false,[3]=false,[4]=false,[5]=false,[6]=false,[7]=false,[8]=false,[9]=false,[10]=true}}},
-      {dwID=39134,nFrame=57,szName="西营·爆破兵",[3]={bCenterAlarm=true,bScreenHead=true}}
+      {dwID=39134,nFrame=57,szName="西营·爆破兵",[3]={bCenterAlarm=true,bScreenHead=true}},
+      {dwID=41161,nFrame=52,[3]={bScreenHead=true,tMark={[1]=true,[2]=false,[3]=false,[4]=false,[5]=false,[6]=false,[7]=false,[8]=false,[9]=false,[10]=false}}}
     },
     [224]={
       {dwID=46466,nFrame=57,[3]={bCenterAlarm=true}},
